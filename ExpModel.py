@@ -1,5 +1,6 @@
 # from gurobipy import *
 import csv
+import datetime
 
 ports = 5
 boats = 3
@@ -61,6 +62,7 @@ with open('demand.csv', newline='') as fd:
 fd.close()
 
 
+
 demand = {}
 
 for i in range(len(arrd)):
@@ -70,4 +72,11 @@ for i in range(len(arrd)):
     demand[i, 1] = int(demand[i, 1])
     demand[i,4] = int(demand[i,4])
 
-# printmatrix(demand, len(arrd), 5)
+
+for i in range(len(arrd)):
+    for j in range(2,4):
+        pt = datetime.datetime.strptime(demand[i,j],'%H:%M')
+        total_minutes = pt.minute+pt.hour*60
+        demand[i,j] = total_minutes
+
+printmatrix(demand, len(arrd), 5)
