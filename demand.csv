@@ -1,4 +1,3 @@
-o_port,d_port,dep,arr,aeq
 Port1,Port4,06:30,07:30,21
 Port3,Port5,06:30,07:30,32
 Port1,Port2,07:00,08:00,4
@@ -31,7 +30,6 @@ Port1,Port2,18:00,19:00,40
 Port1,Port3,18:00,19:00,32
 Port4,Port1,18:00,19:00,20
 Port2,Port1,19:00,20:00,21
-,,,,
 Port3,Port1,19:00,20:00,8
 Port5,Port2,19:00,20:00,31
 Port5,Port3,19:00,20:00,93
