@@ -1,8 +1,19 @@
 # from gurobipy import *
+import csv
 
 ports = 5
 boats = 3
 ferries = ["small1", "small2", "large"]
+
+def printmatrix(m,r,c):
+    line = []
+
+    for i in range(r):
+        for j in range(c):
+            line.append(m[i,j])
+        print(line)
+        line =[]
+
 
 name = "times"
 
@@ -42,5 +53,21 @@ portcost = [160, 160, 240]
 berths = [3, 2, 2, 1, 1]
 porttime = [30, 20, 20, 20, 20]
 
+arrd =[]
+with open('demand.csv', newline='') as fd:
+    reader = csv.reader(fd)
+    for row in reader:
+        arrd.append(row)
+fd.close()
 
 
+demand = {}
+
+for i in range(len(arrd)):
+    for j in range(5):
+        demand[i,j] = arrd[i][j]
+    demand[i, 0] = int(demand[i, 0])
+    demand[i, 1] = int(demand[i, 1])
+    demand[i,4] = int(demand[i,4])
+
+# printmatrix(demand, len(arrd), 5)
