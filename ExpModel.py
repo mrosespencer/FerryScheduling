@@ -46,7 +46,7 @@ for i in range(ports):
 homeport = [1, 3, 5]
 capacity = [100, 100, 200]
 fuelcost = [400, 400, 600]  # per hour
-portcost = [160, 160, 240]
+portcost = [160, 160, 240]  # per hour
 
 # Port data
 berths = [3, 2, 2, 1, 1]
@@ -75,12 +75,26 @@ for i in range(len(arrd)):
         total_minutes = pt.minute + pt.hour * 60
         demand[i, j] = total_minutes
 
-printmatrix(demand, len(arrd), 5)
+# printmatrix(demand, len(arrd), 5)
 
 # define parameters
 
-delta = 10
-initial = 0
-final = 24 * 60
+starttime = '00:00'
+pt = datetime.datetime.strptime(starttime, '%H:%M')
+starttime = pt.minute + pt.hour * 60
 
-SolveMod.ferrymodel(p, b, final)
+finaltime = "23:50"
+pt = datetime.datetime.strptime(finaltime, '%H:%M')
+finaltime = pt.minute + pt.hour * 60
+
+delta = 10
+q = int((finaltime-starttime)/delta)
+
+fuelcostd = [0,0,0]
+portcostd = [0,0,0]
+for b in range(3):
+    fuelcostd[b] = (fuelcost[b]*(delta/60))
+    portcostd[b] = portcost[b] * (delta / 60)
+
+
+SolveMod.ferrymodel(ports, boats, q)

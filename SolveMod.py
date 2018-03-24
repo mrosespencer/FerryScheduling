@@ -25,3 +25,6 @@ def ferrymodel(p, b, q):
 
             for k in range(b):
                 y[i, j, k] = m.addVar(vtype=GRB.BINARY, name='y ' + str(i) + '_' + str(j) + '_' + str(b))
+
+    m.update()
+    return 1
