@@ -1,10 +1,12 @@
 import csv
 import datetime
 import SolveMod
+import math
 
 ports = 5
 boats = 3
 ferries = ["small1", "small2", "large"]
+delta = 10
 
 
 def printmatrix(m, r, c):
@@ -38,10 +40,14 @@ for i in range(ports):
     for j in range(ports):
         small1time[j, i] = arrt[j][i]
     for j in range(ports, ports * 2):
-        small2time[j, i] = arrt[j][i]
+        small2time[j%5, i] = arrt[j][i]
     for j in range(ports * 2, ports * 3):
-        largetime[j, i] = arrt[j][i]
+        largetime[j%5, i] = arrt[j][i]
 
+largetimed ={}
+for i in range(ports):
+    for j in range(ports):
+        largetimed[i,j] = math.floor(largetime[i,j]/delta)
 # Ferry data
 homeport = [1, 3, 5]
 capacity = [100, 100, 200]
@@ -62,6 +68,7 @@ fd.close()
 
 demand = {}
 
+
 for i in range(len(arrd)):
     for j in range(5):
         demand[i, j] = arrd[i][j]
@@ -69,13 +76,14 @@ for i in range(len(arrd)):
     demand[i, 1] = int(demand[i, 1])
     demand[i, 4] = int(demand[i, 4])
 
+
 for i in range(len(arrd)):
     for j in range(2, 4):
         pt = datetime.datetime.strptime(demand[i, j], '%H:%M')
         total_minutes = pt.minute + pt.hour * 60
-        demand[i, j] = total_minutes
+        demand[i, j] = math.floor(total_minutes/delta)
 
-# printmatrix(demand, len(arrd), 5)
+printmatrix(demand, len(arrd), 5)
 
 # define parameters
 
@@ -87,7 +95,7 @@ finaltime = "23:50"
 pt = datetime.datetime.strptime(finaltime, '%H:%M')
 finaltime = pt.minute + pt.hour * 60
 
-delta = 10
+
 q = int((finaltime-starttime)/delta)
 
 fuelcostd = [0,0,0]
@@ -96,5 +104,9 @@ for b in range(3):
     fuelcostd[b] = (fuelcost[b]*(delta/60))
     portcostd[b] = portcost[b] * (delta / 60)
 
+porttimed = [0,0,0,0,0]
+for p in range(ports):
+    porttimed[p] = math.floor(porttime[p]/delta)
+# print(porttimed)
 
-SolveMod.ferrymodel(ports, boats, q)
+SolveMod.ferrymodel(ports, boats, q, berths, porttimed,delta, portcostd, fuelcostd, capacity, demand, largetimed)
