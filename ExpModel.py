@@ -83,11 +83,11 @@ for i in range(len(arrd)):
         total_minutes = pt.minute + pt.hour * 60
         demand[i, j] = math.floor(total_minutes/delta)
 
-printmatrix(demand, len(arrd), 5)
+# printmatrix(demand, len(arrd), 5)
 
 # define parameters
 
-starttime = '00:00'
+starttime = '05:00'
 pt = datetime.datetime.strptime(starttime, '%H:%M')
 starttime = pt.minute + pt.hour * 60
 
