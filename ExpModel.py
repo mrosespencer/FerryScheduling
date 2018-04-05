@@ -49,6 +49,26 @@ largetimed ={}
 for i in range(ports):
     for j in range(ports):
         largetimed[i,j] = math.floor(largetime[i,j]/delta)
+
+# Time data
+tname = "traveltime.txt"
+ft = open(tname, "r")
+arrtravel = []
+for line in ft:
+    line = line.split()
+
+    if line:
+        line = [int(float(i)) for i in line]
+        arrtravel.append(line)
+ft.close()
+
+times = {}
+for i in range(boats):
+    for j in range(ports*ports):
+        times[i,j] = math.floor(arrtravel[i][j]/delta)
+
+# printmatrix(times,boats,ports*ports)
+
 # Ferry data
 homeport = [1, 3, 5]
 capacity = [100, 100, 200]
@@ -111,4 +131,4 @@ for p in range(ports):
 # print(porttimed)
 
 # SolveMod.ferrymodel(ports, boats, q, berths, porttimed,delta, portcostd, fuelcostd, capacity, demand, largetimed)
-SolveMod2.ferrymodel(ports, boats, q, berths, porttimed,delta, portcostd, fuelcostd, capacity, demand, largetimed)
+SolveMod2.ferrymodel(ports, boats, q, berths, porttimed,delta, portcostd, fuelcostd, capacity, demand, times)

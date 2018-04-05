@@ -3,7 +3,7 @@ import time
 import math
 
 
-def ferrymodel(p, b, q, berths, porttimed, delta, portcostd, fuelcostd, capacity, demand, largetimed):
+def ferrymodel(p, b, q, berths, porttimed, delta, portcostd, fuelcostd, capacity, demand, times):
     t0 = time.time()
 
     # Create model
@@ -14,20 +14,21 @@ def ferrymodel(p, b, q, berths, porttimed, delta, portcostd, fuelcostd, capacity
     m.setParam("logfile", "%s.txt" % logname)
 
     n = p * q
+    o = p*p
 
     # Create variables
     x = {}
     y = {}
 
     for i in range(q):
-        for j in range(p*p):
+        for j in range(o):
             for k in range(b):
                 # x[i, j, k] = m.addVar(vtype=GRB.INTEGER, name='x ' + str(i) + '_' + str(j))  # passengers
                 y[i, j, k] = m.addVar(vtype=GRB.BINARY, name='y ' + str(i) + '_' + str(j) + '_' + str(b))  # ferries
 
     objective = LinExpr()
     for i in range(q):
-        for j in range(p*p):
+        for j in range(o):
             for k in range(b):
                 w = j%6
 
@@ -49,6 +50,15 @@ def ferrymodel(p, b, q, berths, porttimed, delta, portcostd, fuelcostd, capacity
 
     # Berth constraints
     for i in range(q):
-        for j in range(0,p*p, 6):
+        for j in range(0,o, 6):
             port = j%5
             m.addConstr(quicksum(y[i,j,k] for k in range(b)) <= berths[port])
+
+    # Traversing arc times
+    for i in range(q):
+        for j in range(o):
+            for k in range(b):
+                arctime = times[k,j]
+                if (q-i) >= arctime:
+                    if j%6 != 0:
+                        m.addConstr(quicksum(y[a,j,k] for a in range(i,i+arctime)) ==1, name ="travel "+str(i)+"_"+str(k))  # this is definitely wrong
