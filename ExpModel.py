@@ -1,6 +1,7 @@
 import csv
 import datetime
 import SolveMod
+import SolveMod2
 import math
 
 ports = 5
@@ -109,4 +110,5 @@ for p in range(ports):
     porttimed[p] = math.floor(porttime[p]/delta)
 # print(porttimed)
 
-SolveMod.ferrymodel(ports, boats, q, berths, porttimed,delta, portcostd, fuelcostd, capacity, demand, largetimed)
+# SolveMod.ferrymodel(ports, boats, q, berths, porttimed,delta, portcostd, fuelcostd, capacity, demand, largetimed)
+SolveMod2.ferrymodel(ports, boats, q, berths, porttimed,delta, portcostd, fuelcostd, capacity, demand, largetimed)
