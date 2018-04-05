@@ -36,8 +36,19 @@ def ferrymodel(p, b, q, berths, porttimed, delta, portcostd, fuelcostd, capacity
                 else:
                     objective.addTerms(porttimed[k], y[i, j, k])
 
+    # Ferry balancing constraints
     for k in range(b):
         for l in range(p):
             outb = quicksum(y[i,j,k] for i in range(q) for j in range(l*5, (l+1)*5))
             inb = quicksum(y[i,j,k] for i in range(q) for j in range(l, p*p, 5))
             m.addConstr(outb-inb == 0, name="bal" + str(l)+"_" + str(k))
+
+    m.addConstr(y[(q-1), 0,0] == 1)
+    m.addConstr(y[(q-1), 10,1] == 1)
+    m.addConstr(y[(q - 1), 24, 2] == 1)
+
+    # Berth constraints
+    for i in range(q):
+        for j in range(0,p*p, 6):
+            port = j%5
+            m.addConstr(quicksum(y[i,j,k] for k in range(b)) <= berths[port])
