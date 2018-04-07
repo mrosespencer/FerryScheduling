@@ -61,4 +61,12 @@ def ferrymodel(p, b, q, berths, porttimed, delta, portcostd, fuelcostd, capacity
                 arctime = times[k,j]
                 if (q-i) >= arctime:
                     if j%6 != 0:
-                        m.addConstr(quicksum(y[a,j,k] for a in range(i,i+arctime)) ==1, name ="travel "+str(i)+"_"+str(k))  # this is definitely wrong
+                        m.addConstr(quicksum(y[a,j,k] for a in range(i+1,i+arctime)) <= y[i,j,k], name ="travel "+str(i)+"_"+str(k))  # this is possibly wrong
+
+    # Waiting arc times
+    for i in range(q-3):
+        for j in range(o):
+            for k in range(b):
+                port = j%5
+                w = porttimed[port]
+                m.addConstr(w*(quicksum(y[l,j,k] for l in range(i+1, i+w))) <= y[i,j,k], name = "wait " +str(i)+"_"+str(j)+"_"+str(k))    #not convinced this is right either
