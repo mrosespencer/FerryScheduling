@@ -89,6 +89,15 @@ fd.close()
 
 demand = {}
 
+# define parameters
+
+starttime = '05:00'
+pt = datetime.datetime.strptime(starttime, '%H:%M')
+starttime = pt.minute + pt.hour * 60
+
+finaltime = "23:50"
+pt = datetime.datetime.strptime(finaltime, '%H:%M')
+finaltime = pt.minute + pt.hour * 60
 
 for i in range(len(arrd)):
     for j in range(5):
@@ -101,20 +110,12 @@ for i in range(len(arrd)):
 for i in range(len(arrd)):
     for j in range(2, 4):
         pt = datetime.datetime.strptime(demand[i, j], '%H:%M')
-        total_minutes = pt.minute + pt.hour * 60
+        total_minutes = pt.minute + pt.hour * 60-starttime
         demand[i, j] = math.floor(total_minutes/delta)
 
 # printmatrix(demand, len(arrd), 5)
 
-# define parameters
 
-starttime = '05:00'
-pt = datetime.datetime.strptime(starttime, '%H:%M')
-starttime = pt.minute + pt.hour * 60
-
-finaltime = "23:50"
-pt = datetime.datetime.strptime(finaltime, '%H:%M')
-finaltime = pt.minute + pt.hour * 60
 
 
 q = int((finaltime-starttime)/delta)
@@ -128,7 +129,22 @@ for b in range(3):
 porttimed = [0,0,0,0,0]
 for p in range(ports):
     porttimed[p] = math.floor(porttime[p]/delta)
+
+demandm ={}
+for i in range(q):
+    for j in range(p*p):
+        demandm[i,j] =0
+
+for i in range(len(arrd)):
+    arrival = demand[i,0] - 1
+    dest = demand[i,1] - 1
+    arrtime = demand[i,2]
+
+    demandm[arrtime, arrival*5 +dest] = demand[i,4]
+    # print(demandm[arrtime, arrival*5 +dest])
+
+# printmatrix(demandm, q, 25)
 # print(porttimed)
 
 # SolveMod.ferrymodel(ports, boats, q, berths, porttimed,delta, portcostd, fuelcostd, capacity, demand, largetimed)
-SolveMod2.ferrymodel(ports, boats, q, berths, porttimed,delta, portcostd, fuelcostd, capacity, demand, times)
+SolveMod2.ferrymodel(ports, boats, q, berths, porttimed,delta, portcostd, fuelcostd, capacity, demandm, times)
