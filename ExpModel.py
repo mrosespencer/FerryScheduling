@@ -131,16 +131,22 @@ for p in range(ports):
     porttimed[p] = math.floor(porttime[p]/delta)
 
 demandm ={}
+# arrivingpass ={}
 for i in range(q):
-    for j in range(p*p):
-        demandm[i,j] =0
+    # for j in range(p*p):
+    #     demandm[i,j] =0
+    for j in range(p):
+        for h in range(p):
+            demandm[i,j,h] =0
 
 for i in range(len(arrd)):
     arrival = demand[i,0] - 1
     dest = demand[i,1] - 1
     arrtime = demand[i,2]
+    desttime = demand[i,3]
 
-    demandm[arrtime, arrival*5 +dest] = demand[i,4]
+    demandm[arrtime, arrival, dest] = demand[i,4]
+    # demandm[desttime, (arrival*5 +dest)] = demand[i,4]
     # print(demandm[arrtime, arrival*5 +dest])
 
 # printmatrix(demandm, q, 25)
