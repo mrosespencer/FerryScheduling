@@ -12,6 +12,7 @@ def ferrymodel(p, b, q, berths, porttimed, delta, portcostd, fuelcostd, capacity
     logname = "ferry-log"
 
     m.setParam("logfile", "%s.txt" % logname)
+    m.setParam(GRB.Param.TimeLimit, 90.0)
 
     n = p * q
     o = p*p
@@ -87,6 +88,44 @@ def ferrymodel(p, b, q, berths, porttimed, delta, portcostd, fuelcostd, capacity
 # Passenger balancing -- needs modification
     for a in range(p):
         for l in range(p):
-            outx = quicksum(x[i,j,a] for i in range(q) for j in range(l*5, (l+1)*5))
-            inx = quicksum(x[i,j,a] for i in range(q) for j in range(l, p*p, 5))
-            m.addConstr(outx-inx == 0, name="bal " + str(l)+"_" + str(k))
+            for i in range(q):
+                outx = quicksum(x[i,j,a]  for j in range(l*5, (l+1)*5))
+                inx = quicksum(x[i,j,a]  for j in range(l, p*p, 5))
+                # print("%d, %d, %d" % (i, l, a))
+                m.addConstr(inx-outx == demand[i,l,a], name="bal " +str(i)+"_"+ str(l)+"_" + str(a))
+
+    m.update()
+    m.optimize()
+
+
+    finalx = {}
+    varlist = []
+
+    # for v in m.getVars():
+    #     if v.VType  > 0:
+    #         varlist.append(v.x)
+
+
+    # for i in range(n):
+    #     for j in range(n):
+    #         finalx[i,j] = varlist[(n*i)+j]
+
+    gap = m.MIPGAP
+
+    m.computeIIS()
+    m.write("model.ilp")
+    print('\nThe following constraint(s) cannot be satisfied:')
+    for c in m.getConstrs():
+        if c.IISConstr:
+            print('%s' % c.constrName)
+
+    # for v in m.getVars():
+    #     if v.x > 0:
+    #         print(v.varName, v.x)
+
+    print('Obj:', m.objVal)
+    print('Gap: ', gap)
+
+
+    t1 = time.time()
+    totaltime = t1 - t0

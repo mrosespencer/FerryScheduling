@@ -8,6 +8,7 @@ ports = 5
 boats = 3
 ferries = ["small1", "small2", "large"]
 delta = 10
+# p = 5
 
 
 def printmatrix(m, r, c):
@@ -135,8 +136,8 @@ demandm ={}
 for i in range(q):
     # for j in range(p*p):
     #     demandm[i,j] =0
-    for j in range(p+p):
-        for h in range(p):
+    for j in range(ports):
+        for h in range(ports):
             demandm[i,j,h] =0
 
 for i in range(len(arrd)):
@@ -145,12 +146,17 @@ for i in range(len(arrd)):
     arrtime = demand[i,2]
     desttime = demand[i,3]
 
-    demandm[arrtime, arrival, dest] = demand[i,4]
-    demandm[arrtime,arrival+5, dest] = -demand[i,4] #still wrong
+    demandm[arrtime, arrival, dest] = -demand[i,4]
+    # demandm[arrtime,dest+5, dest] = -demand[i,4] #still wrong
+    demandm[desttime, dest, dest] = demand[i, 4]
     # demandm[desttime, (arrival*5 +dest)] = demand[i,4]
     # print(demandm[arrtime, arrival*5 +dest])
 
-# printmatrix(demandm, q, 25)
+# for i in range(q):
+#     for j in range(ports):
+#         for h in range(ports):
+#             print("%d, %d, %d: %d" % (i,j,h,demandm[i,j,h]))
+
 # print(porttimed)
 
 # SolveMod.ferrymodel(ports, boats, q, berths, porttimed,delta, portcostd, fuelcostd, capacity, demand, largetimed)
