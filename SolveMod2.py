@@ -83,9 +83,10 @@ def ferrymodel(p, b, q, berths, porttimed, delta, portcostd, fuelcostd, capacity
 
     for i in range(q):
         for j in range(o):
-            m.addConstr(quicksum(x[i,j,a] for a in range(p)) <= quicksum(capacity[k]*y[i,j,k] for k in range(b)), name = "cap "+str(i)+"_"+str(j)) # capacity constraints
+            if j % 6 != 0:
+                m.addConstr(quicksum(x[i,j,a] for a in range(p)) <= quicksum(capacity[k]*y[i,j,k] for k in range(b)), name = "cap "+str(i)+"_"+str(j)) # capacity constraints
 
-# Passenger balancing -- needs modification
+    # Passenger balancing -- needs modification
     for a in range(p):
         for l in range(p):
             for i in range(q):
@@ -93,6 +94,16 @@ def ferrymodel(p, b, q, berths, porttimed, delta, portcostd, fuelcostd, capacity
                 inx = quicksum(x[i,j,a]  for j in range(l, p*p, 5))
                 # print("%d, %d, %d" % (i, l, a))
                 m.addConstr(inx-outx == demand[i,l,a], name="bal " +str(i)+"_"+ str(l)+"_" + str(a))
+
+    # Passenger transfer
+    for a in range(p):
+        for i in range(9,q-1):
+            w = porttimed[a]
+            for t in range(i, i+w):
+                
+                lhs = quicksum(x[i,,a] for j =)
+
+
 
     m.update()
     m.optimize()
