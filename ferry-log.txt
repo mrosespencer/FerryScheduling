@@ -1,0 +1,1919 @@
+
+Gurobi 7.0.2 (win64) logging started 03/23/18 19:01:15
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+
+Gurobi 7.0.2 (win64) logging started 03/23/18 19:01:52
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+
+Gurobi 7.0.2 (win64) logging started 04/01/18 12:51:58
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+
+Gurobi 7.0.2 (win64) logging started 04/01/18 12:52:15
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+
+Gurobi 7.0.2 (win64) logging started 04/01/18 12:52:53
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+
+Gurobi 7.0.2 (win64) logging started 04/01/18 12:57:19
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+
+Gurobi 7.0.2 (win64) logging started 04/01/18 12:57:52
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+
+Gurobi 7.0.2 (win64) logging started 04/01/18 12:59:04
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+
+Gurobi 7.0.2 (win64) logging started 04/01/18 13:03:22
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+
+Gurobi 7.0.2 (win64) logging started 04/01/18 13:47:03
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+
+Gurobi 7.0.2 (win64) logging started 04/01/18 13:47:56
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+
+Gurobi 7.0.2 (win64) logging started 04/01/18 13:49:04
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+
+Gurobi 7.0.2 (win64) logging started 04/01/18 13:50:10
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+
+Gurobi 7.0.2 (win64) logging started 04/01/18 13:50:46
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+
+Gurobi 7.0.2 (win64) logging started 04/01/18 13:51:35
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+
+Gurobi 7.0.2 (win64) logging started 04/01/18 13:52:20
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+
+Gurobi 7.0.2 (win64) logging started 04/01/18 13:53:34
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+
+Gurobi 7.0.2 (win64) logging started 04/01/18 13:54:52
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+
+Gurobi 7.0.2 (win64) logging started 04/01/18 13:55:41
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+
+Gurobi 7.0.2 (win64) logging started 04/01/18 13:56:09
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+
+Gurobi 7.0.2 (win64) logging started 04/01/18 13:57:34
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+
+Gurobi 7.0.2 (win64) logging started 04/01/18 14:01:07
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+
+Gurobi 7.0.2 (win64) logging started 04/01/18 14:02:17
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+
+Gurobi 7.0.2 (win64) logging started 04/01/18 14:35:26
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+
+Gurobi 7.0.2 (win64) logging started 04/01/18 15:01:32
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+
+Gurobi 7.0.2 (win64) logging started 04/01/18 15:02:21
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+
+Gurobi 7.0.2 (win64) logging started 04/01/18 15:03:02
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+
+Gurobi 7.0.2 (win64) logging started 04/01/18 15:04:06
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+
+Gurobi 7.0.2 (win64) logging started 04/01/18 15:06:02
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+
+Gurobi 7.0.2 (win64) logging started 04/01/18 15:06:48
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+
+Gurobi 7.0.2 (win64) logging started 04/01/18 15:07:05
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+
+Gurobi 7.0.2 (win64) logging started 04/01/18 15:07:48
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+
+Gurobi 7.0.2 (win64) logging started 04/03/18 13:02:41
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+
+Gurobi 7.0.2 (win64) logging started 04/03/18 13:22:12
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+
+Gurobi 7.0.2 (win64) logging started 04/03/18 13:32:00
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+
+Gurobi 7.0.2 (win64) logging started 04/03/18 13:32:21
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+
+Gurobi 7.0.2 (win64) logging started 04/03/18 13:32:32
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+
+Gurobi 7.0.2 (win64) logging started 04/03/18 14:21:01
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+
+Gurobi 7.0.2 (win64) logging started 04/03/18 14:27:36
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+
+Gurobi 7.0.2 (win64) logging started 04/03/18 14:31:43
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+
+Gurobi 7.0.2 (win64) logging started 04/03/18 14:34:19
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+
+Gurobi 7.0.2 (win64) logging started 04/03/18 14:34:57
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+
+Gurobi 7.0.2 (win64) logging started 04/03/18 14:37:50
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+
+Gurobi 7.0.2 (win64) logging started 04/03/18 14:39:54
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+
+Gurobi 7.0.2 (win64) logging started 04/03/18 14:40:54
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+
+Gurobi 7.0.2 (win64) logging started 04/03/18 14:45:31
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+
+Gurobi 7.0.2 (win64) logging started 04/03/18 14:48:12
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+
+Gurobi 7.0.2 (win64) logging started 04/03/18 14:52:37
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+
+Gurobi 7.0.2 (win64) logging started 04/03/18 14:56:46
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+
+Gurobi 7.0.2 (win64) logging started 04/04/18 19:54:15
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+
+Gurobi 7.0.2 (win64) logging started 04/04/18 19:55:13
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+
+Gurobi 7.0.2 (win64) logging started 04/05/18 15:22:32
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+
+Gurobi 7.0.2 (win64) logging started 04/05/18 16:10:28
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+
+Gurobi 7.0.2 (win64) logging started 04/05/18 16:10:49
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+
+Gurobi 7.0.2 (win64) logging started 04/05/18 16:11:30
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+
+Gurobi 7.0.2 (win64) logging started 04/05/18 16:21:52
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+
+Gurobi 7.0.2 (win64) logging started 04/05/18 16:22:00
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+
+Gurobi 7.0.2 (win64) logging started 04/05/18 16:22:44
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+
+Gurobi 7.0.2 (win64) logging started 04/05/18 16:23:38
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+
+Gurobi 7.0.2 (win64) logging started 04/05/18 16:25:05
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+
+Gurobi 7.0.2 (win64) logging started 04/05/18 16:25:38
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+
+Gurobi 7.0.2 (win64) logging started 04/05/18 16:38:31
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+
+Gurobi 7.0.2 (win64) logging started 04/05/18 16:46:56
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+
+Gurobi 7.0.2 (win64) logging started 04/06/18 19:19:56
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+
+Gurobi 7.0.2 (win64) logging started 04/06/18 19:21:45
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+
+Gurobi 7.0.2 (win64) logging started 04/06/18 19:22:25
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+
+Gurobi 7.0.2 (win64) logging started 04/09/18 16:31:06
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+
+Gurobi 7.0.2 (win64) logging started 04/09/18 16:32:27
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+
+Gurobi 7.0.2 (win64) logging started 04/09/18 16:32:48
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+
+Gurobi 7.0.2 (win64) logging started 04/09/18 16:33:58
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+
+Gurobi 7.0.2 (win64) logging started 04/09/18 16:39:46
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+
+Gurobi 7.0.2 (win64) logging started 04/09/18 16:48:20
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+
+Gurobi 7.0.2 (win64) logging started 04/09/18 16:53:37
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+
+Gurobi 7.0.2 (win64) logging started 04/09/18 17:10:55
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+
+Gurobi 7.0.2 (win64) logging started 04/09/18 17:14:13
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+
+Gurobi 7.0.2 (win64) logging started 04/09/18 17:14:40
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+
+Gurobi 7.0.2 (win64) logging started 04/09/18 17:23:44
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+
+Gurobi 7.0.2 (win64) logging started 04/09/18 17:27:44
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+
+Gurobi 7.0.2 (win64) logging started 04/09/18 17:32:10
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+
+Gurobi 7.0.2 (win64) logging started 04/09/18 18:03:56
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+
+Gurobi 7.0.2 (win64) logging started 04/10/18 13:49:48
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+
+Gurobi 7.0.2 (win64) logging started 04/11/18 11:42:36
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+
+Gurobi 7.0.2 (win64) logging started 04/11/18 11:48:35
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+
+Gurobi 7.0.2 (win64) logging started 04/11/18 12:31:05
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+
+Gurobi 7.0.2 (win64) logging started 04/11/18 12:32:36
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+
+Gurobi 7.0.2 (win64) logging started 04/11/18 12:41:13
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+
+Gurobi 7.0.2 (win64) logging started 04/11/18 12:41:49
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+
+Gurobi 7.0.2 (win64) logging started 04/11/18 12:44:06
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+
+Gurobi 7.0.2 (win64) logging started 04/11/18 12:47:03
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+
+Gurobi 7.0.2 (win64) logging started 04/11/18 12:47:20
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+
+Gurobi 7.0.2 (win64) logging started 04/11/18 12:47:33
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+
+Gurobi 7.0.2 (win64) logging started 04/11/18 12:50:19
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+
+Gurobi 7.0.2 (win64) logging started 04/11/18 12:50:31
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+
+Gurobi 7.0.2 (win64) logging started 04/11/18 12:50:41
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+
+Gurobi 7.0.2 (win64) logging started 04/11/18 12:56:05
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+
+Gurobi 7.0.2 (win64) logging started 04/11/18 13:08:57
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+
+Gurobi 7.0.2 (win64) logging started 04/11/18 13:09:09
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+
+Gurobi 7.0.2 (win64) logging started 04/11/18 13:10:26
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+
+Gurobi 7.0.2 (win64) logging started 04/11/18 13:11:19
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+
+Gurobi 7.0.2 (win64) logging started 04/11/18 13:11:46
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+
+Gurobi 7.0.2 (win64) logging started 04/11/18 13:28:34
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+Changed value of parameter TimeLimit to 90.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 16944 rows, 22725 columns and 94715 nonzeros
+Variable types: 0 continuous, 22725 integer (8475 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+02]
+  Objective range  [0e+00, 0e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 9e+01]
+Presolve removed 2803 rows and 4656 columns
+Presolve time: 0.43s
+
+Explored 0 nodes (0 simplex iterations) in 0.58 seconds
+Thread count was 1 (of 8 available processors)
+
+Solution count 0
+Pool objective bound 1e+100
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Gurobi 7.0.2 (win64) logging started 04/11/18 13:29:24
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+Changed value of parameter TimeLimit to 90.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 16944 rows, 22725 columns and 94715 nonzeros
+Variable types: 0 continuous, 22725 integer (8475 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+02]
+  Objective range  [0e+00, 0e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 9e+01]
+Presolve removed 2803 rows and 4656 columns
+Presolve time: 0.42s
+
+Explored 0 nodes (0 simplex iterations) in 0.47 seconds
+Thread count was 1 (of 8 available processors)
+
+Solution count 0
+Pool objective bound 1e+100
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Gurobi 7.0.2 (win64) logging started 04/11/18 13:36:18
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+Changed value of parameter TimeLimit to 90.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 16944 rows, 22725 columns and 94715 nonzeros
+Variable types: 0 continuous, 22725 integer (8475 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+02]
+  Objective range  [0e+00, 0e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 9e+01]
+Presolve removed 2803 rows and 4656 columns
+Presolve time: 1.12s
+
+Explored 0 nodes (0 simplex iterations) in 1.26 seconds
+Thread count was 1 (of 8 available processors)
+
+Solution count 0
+Pool objective bound 1e+100
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Computing Irreducible Inconsistent Subsystem (IIS)...
+
+      Constraints           Bounds       Runtime
+     Min       Max       Min      Max
+------------------------------------------------
+        0    16944         0    14250         0s
+        5        5         0        0         1s
+
+IIS computed: 5 constraints, 0 bounds
+IIS runtime: 1.17 seconds
+Warning: variable name "x 18_1_0" has a space
+Warning: constraint name "bal 18_0_0" has a space
+Warning: to let Gurobi read it back, use rlp format
+
+Gurobi 7.0.2 (win64) logging started 04/11/18 13:37:55
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+Changed value of parameter TimeLimit to 90.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 16944 rows, 22725 columns and 94715 nonzeros
+Variable types: 0 continuous, 22725 integer (8475 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+02]
+  Objective range  [0e+00, 0e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 9e+01]
+Presolve removed 2803 rows and 4656 columns
+Presolve time: 1.11s
+
+Explored 0 nodes (0 simplex iterations) in 1.19 seconds
+Thread count was 1 (of 8 available processors)
+
+Solution count 0
+Pool objective bound 1e+100
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Computing Irreducible Inconsistent Subsystem (IIS)...
+
+      Constraints           Bounds       Runtime
+     Min       Max       Min      Max
+------------------------------------------------
+        0    16944         0    14250         0s
+        5        5         0        0         1s
+
+IIS computed: 5 constraints, 0 bounds
+IIS runtime: 1.14 seconds
+Warning: variable name "x 18_1_0" has a space
+Warning: constraint name "bal 18_0_0" has a space
+Warning: to let Gurobi read it back, use rlp format
+
+Gurobi 7.0.2 (win64) logging started 04/11/18 13:41:38
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+Changed value of parameter TimeLimit to 90.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 14119 rows, 22725 columns and 72115 nonzeros
+Variable types: 0 continuous, 22725 integer (8475 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+02]
+  Objective range  [0e+00, 0e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 3e+00]
+Found heuristic solution: objective 0
+
+Explored 0 nodes (0 simplex iterations) in 0.05 seconds
+Thread count was 1 (of 8 available processors)
+
+Solution count 1: 0 
+Pool objective bound 0
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+Found heuristic solution: objective 0
+
+Explored 0 nodes (0 simplex iterations) in 0.02 seconds
+Thread count was 1 (of 8 available processors)
+
+Solution count 1: 0 
+Pool objective bound 0
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+IIS runtime: 0.02 seconds
+
+Gurobi 7.0.2 (win64) logging started 04/11/18 13:42:15
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+Changed value of parameter TimeLimit to 90.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 16944 rows, 22725 columns and 94715 nonzeros
+Variable types: 0 continuous, 22725 integer (8475 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+02]
+  Objective range  [0e+00, 0e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 9e+01]
+Presolve removed 2803 rows and 4656 columns
+Presolve time: 1.13s
+
+Explored 0 nodes (0 simplex iterations) in 1.22 seconds
+Thread count was 1 (of 8 available processors)
+
+Solution count 0
+Pool objective bound 1e+100
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Computing Irreducible Inconsistent Subsystem (IIS)...
+
+      Constraints           Bounds       Runtime
+     Min       Max       Min      Max
+------------------------------------------------
+        0    16944         0    14250         0s
+        5        5         0        0         1s
+
+IIS computed: 5 constraints, 0 bounds
+IIS runtime: 1.09 seconds
+Warning: variable name "x 18_1_0" has a space
+Warning: constraint name "bal 18_0_0" has a space
+Warning: to let Gurobi read it back, use rlp format
+
+Gurobi 7.0.2 (win64) logging started 04/11/18 13:45:40
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+Changed value of parameter TimeLimit to 90.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 16944 rows, 22725 columns and 94715 nonzeros
+Variable types: 0 continuous, 22725 integer (8475 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+02]
+  Objective range  [0e+00, 0e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 9e+01]
+Presolve removed 2803 rows and 4656 columns
+Presolve time: 0.43s
+
+Explored 0 nodes (0 simplex iterations) in 0.47 seconds
+Thread count was 1 (of 8 available processors)
+
+Solution count 0
+Pool objective bound 1e+100
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Computing Irreducible Inconsistent Subsystem (IIS)...
+
+      Constraints           Bounds       Runtime
+     Min       Max       Min      Max
+------------------------------------------------
+        0    16944         0    14250         0s
+        5        5         0        0         0s
+
+IIS computed: 5 constraints, 0 bounds
+IIS runtime: 0.42 seconds
+Warning: variable name "x 18_1_0" has a space
+Warning: constraint name "bal 18_0_0" has a space
+Warning: to let Gurobi read it back, use rlp format
+
+Gurobi 7.0.2 (win64) logging started 04/11/18 14:29:58
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+Changed value of parameter TimeLimit to 90.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 16379 rows, 22725 columns and 90195 nonzeros
+Variable types: 0 continuous, 22725 integer (8475 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+02]
+  Objective range  [0e+00, 0e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 9e+01]
+Presolve removed 2238 rows and 4656 columns
+Presolve time: 0.42s
+
+Explored 0 nodes (0 simplex iterations) in 0.47 seconds
+Thread count was 1 (of 8 available processors)
+
+Solution count 0
+Pool objective bound 1e+100
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Computing Irreducible Inconsistent Subsystem (IIS)...
+
+      Constraints           Bounds       Runtime
+     Min       Max       Min      Max
+------------------------------------------------
+        0    16379         0    14250         0s
+        5        5         0        0         0s
+
+IIS computed: 5 constraints, 0 bounds
+IIS runtime: 0.40 seconds
+Warning: variable name "x 18_1_0" has a space
+Warning: constraint name "bal 18_0_0" has a space
+Warning: to let Gurobi read it back, use rlp format
+
+Gurobi 7.0.2 (win64) logging started 04/11/18 18:49:07
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+Changed value of parameter TimeLimit to 90.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 16379 rows, 22725 columns and 90195 nonzeros
+Variable types: 0 continuous, 22725 integer (8475 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+02]
+  Objective range  [0e+00, 0e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 9e+01]
+Presolve removed 2238 rows and 4656 columns
+Presolve time: 0.59s
+
+Explored 0 nodes (0 simplex iterations) in 0.70 seconds
+Thread count was 1 (of 8 available processors)
+
+Solution count 0
+Pool objective bound 1e+100
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Computing Irreducible Inconsistent Subsystem (IIS)...
+
+      Constraints           Bounds       Runtime
+     Min       Max       Min      Max
+------------------------------------------------
+        0    16379         0    14250         0s
+        5        5         0        0         1s
+
+IIS computed: 5 constraints, 0 bounds
+IIS runtime: 0.54 seconds
+Warning: variable name "x 18_1_0" has a space
+Warning: constraint name "bal 18_0_0" has a space
+Warning: to let Gurobi read it back, use rlp format
+
+Gurobi 7.0.2 (win64) logging started 04/11/18 18:50:53
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+Changed value of parameter TimeLimit to 90.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 16379 rows, 22725 columns and 90195 nonzeros
+Variable types: 0 continuous, 22725 integer (8475 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+02]
+  Objective range  [0e+00, 0e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 9e+01]
+Presolve removed 2238 rows and 4656 columns
+Presolve time: 0.43s
+
+Explored 0 nodes (0 simplex iterations) in 0.49 seconds
+Thread count was 1 (of 8 available processors)
+
+Solution count 0
+Pool objective bound 1e+100
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Computing Irreducible Inconsistent Subsystem (IIS)...
+
+      Constraints           Bounds       Runtime
+     Min       Max       Min      Max
+------------------------------------------------
+        0    16379         0    14250         0s
+        5        5         0        0         0s
+
+IIS computed: 5 constraints, 0 bounds
+IIS runtime: 0.42 seconds
+Warning: variable name "x 18_1_0" has a space
+Warning: constraint name "bal 18_0_0" has a space
+Warning: to let Gurobi read it back, use rlp format
+
+Gurobi 7.0.2 (win64) logging started 04/11/18 18:54:21
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+Changed value of parameter TimeLimit to 90.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 16379 rows, 22725 columns and 90195 nonzeros
+Variable types: 0 continuous, 22725 integer (8475 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+02]
+  Objective range  [0e+00, 0e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 9e+01]
+Presolve removed 2238 rows and 4656 columns
+Presolve time: 0.42s
+
+Explored 0 nodes (0 simplex iterations) in 0.47 seconds
+Thread count was 1 (of 8 available processors)
+
+Solution count 0
+Pool objective bound 1e+100
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Computing Irreducible Inconsistent Subsystem (IIS)...
+
+      Constraints           Bounds       Runtime
+     Min       Max       Min      Max
+------------------------------------------------
+        0    16379         0    14250         0s
+        5        5         0        0         0s
+
+IIS computed: 5 constraints, 0 bounds
+IIS runtime: 0.40 seconds
+Warning: variable name "x 18_1_0" has a space
+Warning: constraint name "bal 18_0_0" has a space
+Warning: to let Gurobi read it back, use rlp format
+
+Gurobi 7.0.2 (win64) logging started 04/11/18 18:55:18
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+Changed value of parameter TimeLimit to 90.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+
+Gurobi 7.0.2 (win64) logging started 04/11/18 18:59:49
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+Changed value of parameter TimeLimit to 90.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+
+Gurobi 7.0.2 (win64) logging started 04/11/18 19:10:16
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+Changed value of parameter TimeLimit to 90.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+
+Gurobi 7.0.2 (win64) logging started 04/11/18 19:11:12
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+Changed value of parameter TimeLimit to 90.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+
+Gurobi 7.0.2 (win64) logging started 04/11/18 19:12:04
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+Changed value of parameter TimeLimit to 90.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+
+Gurobi 7.0.2 (win64) logging started 04/11/18 19:12:20
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+Changed value of parameter TimeLimit to 90.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+
+Gurobi 7.0.2 (win64) logging started 04/11/18 19:13:16
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+Changed value of parameter TimeLimit to 90.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+
+Gurobi 7.0.2 (win64) logging started 04/11/18 20:45:09
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+Changed value of parameter TimeLimit to 90.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+
+Gurobi 7.0.2 (win64) logging started 04/11/18 20:45:38
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+Changed value of parameter TimeLimit to 90.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+
+Gurobi 7.0.2 (win64) logging started 04/11/18 20:45:48
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+Changed value of parameter TimeLimit to 90.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+
+Gurobi 7.0.2 (win64) logging started 04/11/18 20:46:04
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+Changed value of parameter TimeLimit to 90.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+
+Gurobi 7.0.2 (win64) logging started 04/11/18 20:47:25
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+Changed value of parameter TimeLimit to 90.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+
+Gurobi 7.0.2 (win64) logging started 04/11/18 20:47:50
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+Changed value of parameter TimeLimit to 90.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+
+Gurobi 7.0.2 (win64) logging started 04/11/18 20:48:47
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+Changed value of parameter TimeLimit to 90.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+
+Gurobi 7.0.2 (win64) logging started 04/11/18 20:50:20
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+Changed value of parameter TimeLimit to 90.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+
+Gurobi 7.0.2 (win64) logging started 04/11/18 20:52:12
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+Changed value of parameter TimeLimit to 90.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+
+Gurobi 7.0.2 (win64) logging started 04/11/18 20:52:53
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+Changed value of parameter TimeLimit to 90.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+
+Gurobi 7.0.2 (win64) logging started 04/11/18 20:57:16
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+Changed value of parameter TimeLimit to 90.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+
+Gurobi 7.0.2 (win64) logging started 04/11/18 20:57:25
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+Changed value of parameter TimeLimit to 90.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+
+Gurobi 7.0.2 (win64) logging started 04/11/18 20:58:19
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+Changed value of parameter TimeLimit to 90.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+
+Gurobi 7.0.2 (win64) logging started 04/11/18 20:58:37
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+Changed value of parameter TimeLimit to 90.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+
+Gurobi 7.0.2 (win64) logging started 04/11/18 21:02:49
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+Changed value of parameter TimeLimit to 90.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+
+Gurobi 7.0.2 (win64) logging started 04/11/18 21:02:56
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+Changed value of parameter TimeLimit to 90.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+
+Gurobi 7.0.2 (win64) logging started 04/11/18 21:03:16
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+Changed value of parameter TimeLimit to 90.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 17615 rows, 22725 columns and 95139 nonzeros
+Variable types: 0 continuous, 22725 integer (8475 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+02]
+  Objective range  [0e+00, 0e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 9e+01]
+Presolve removed 3474 rows and 4656 columns
+Presolve time: 0.42s
+
+Explored 0 nodes (0 simplex iterations) in 0.48 seconds
+Thread count was 1 (of 8 available processors)
+
+Solution count 0
+Pool objective bound 1e+100
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Gurobi 7.0.2 (win64) logging started 04/11/18 21:03:48
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+Changed value of parameter TimeLimit to 90.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 17615 rows, 22725 columns and 95139 nonzeros
+Variable types: 0 continuous, 22725 integer (8475 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+02]
+  Objective range  [0e+00, 0e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 9e+01]
+Presolve removed 3474 rows and 4656 columns
+Presolve time: 0.42s
+
+Explored 0 nodes (0 simplex iterations) in 0.47 seconds
+Thread count was 1 (of 8 available processors)
+
+Solution count 0
+Pool objective bound 1e+100
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Computing Irreducible Inconsistent Subsystem (IIS)...
+
+      Constraints           Bounds       Runtime
+     Min       Max       Min      Max
+------------------------------------------------
+        0    17615         0    14250         0s
+        5        5         0        0         0s
+
+IIS computed: 5 constraints, 0 bounds
+IIS runtime: 0.41 seconds
+Warning: variable name "x 18_1_0" has a space
+Warning: constraint name "bal 18_0_0" has a space
+Warning: to let Gurobi read it back, use rlp format
+
+Gurobi 7.0.2 (win64) logging started 04/11/18 22:03:11
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+Changed value of parameter TimeLimit to 90.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 17615 rows, 22725 columns and 95139 nonzeros
+Variable types: 0 continuous, 22725 integer (8475 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+02]
+  Objective range  [0e+00, 0e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 9e+01]
+Presolve removed 3474 rows and 4656 columns
+Presolve time: 0.51s
+
+Explored 0 nodes (0 simplex iterations) in 0.60 seconds
+Thread count was 1 (of 8 available processors)
+
+Solution count 0
+Pool objective bound 1e+100
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Computing Irreducible Inconsistent Subsystem (IIS)...
+
+      Constraints           Bounds       Runtime
+     Min       Max       Min      Max
+------------------------------------------------
+        0    17615         0    14250         0s
+        5        5         0        0         1s
+
+IIS computed: 5 constraints, 0 bounds
+IIS runtime: 0.52 seconds
+Warning: variable name "x 18_1_0" has a space
+Warning: constraint name "bal 18_0_0" has a space
+Warning: to let Gurobi read it back, use rlp format
+
+Gurobi 7.0.2 (win64) logging started 04/11/18 22:12:09
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+Changed value of parameter TimeLimit to 90.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 17615 rows, 22725 columns and 95139 nonzeros
+Variable types: 0 continuous, 22725 integer (8475 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+02]
+  Objective range  [0e+00, 0e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 9e+01]
+Presolve removed 3474 rows and 4656 columns
+Presolve time: 0.47s
+
+Explored 0 nodes (0 simplex iterations) in 0.50 seconds
+Thread count was 1 (of 8 available processors)
+
+Solution count 0
+Pool objective bound 1e+100
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Computing Irreducible Inconsistent Subsystem (IIS)...
+
+      Constraints           Bounds       Runtime
+     Min       Max       Min      Max
+------------------------------------------------
+        0    17615         0    14250         0s
+        5        5         0        0         0s
+
+IIS computed: 5 constraints, 0 bounds
+IIS runtime: 0.41 seconds
+Warning: variable name "x 18_1_0" has a space
+Warning: constraint name "bal 18_0_0" has a space
+Warning: to let Gurobi read it back, use rlp format
+
+Gurobi 7.0.2 (win64) logging started 04/12/18 09:41:05
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+Changed value of parameter TimeLimit to 90.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+
+Gurobi 7.0.2 (win64) logging started 04/12/18 09:41:46
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+Changed value of parameter TimeLimit to 90.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 13658 rows, 22725 columns and 68635 nonzeros
+Variable types: 0 continuous, 22725 integer (8475 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+02]
+  Objective range  [0e+00, 0e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 4e+01]
+Presolve removed 9786 rows and 20690 columns
+Presolve time: 0.70s
+Presolved: 3872 rows, 2035 columns, 17975 nonzeros
+Variable types: 0 continuous, 2035 integer (2034 binary)
+Found heuristic solution: objective 0.0000000
+
+Explored 0 nodes (0 simplex iterations) in 0.81 seconds
+Thread count was 8 (of 8 available processors)
+
+Solution count 1: 0 
+Pool objective bound 0
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+Presolve removed 9786 rows and 20690 columns
+Presolve time: 0.56s
+Presolved: 3872 rows, 2035 columns, 17975 nonzeros
+Variable types: 0 continuous, 2035 integer (2034 binary)
+Found heuristic solution: objective 0.0000000
+
+Explored 0 nodes (0 simplex iterations) in 0.58 seconds
+Thread count was 8 (of 8 available processors)
+
+Solution count 1: 0 
+Pool objective bound 0
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+IIS runtime: 0.58 seconds
+
+Gurobi 7.0.2 (win64) logging started 04/12/18 09:42:28
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+Changed value of parameter TimeLimit to 90.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 13658 rows, 22725 columns and 68635 nonzeros
+Variable types: 0 continuous, 22725 integer (8475 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+02]
+  Objective range  [0e+00, 0e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 4e+01]
+Presolve removed 9786 rows and 20690 columns
+Presolve time: 0.57s
+Presolved: 3872 rows, 2035 columns, 17975 nonzeros
+Variable types: 0 continuous, 2035 integer (2034 binary)
+Found heuristic solution: objective 0.0000000
+
+Explored 0 nodes (0 simplex iterations) in 0.59 seconds
+Thread count was 8 (of 8 available processors)
+
+Solution count 1: 0 
+Pool objective bound 0
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+
+Gurobi 7.0.2 (win64) logging started 04/12/18 09:42:46
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+Changed value of parameter TimeLimit to 90.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 13658 rows, 22725 columns and 68635 nonzeros
+Variable types: 0 continuous, 22725 integer (8475 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+02]
+  Objective range  [0e+00, 0e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 4e+01]
+Presolve removed 9786 rows and 20690 columns
+Presolve time: 0.57s
+Presolved: 3872 rows, 2035 columns, 17975 nonzeros
+Variable types: 0 continuous, 2035 integer (2034 binary)
+Found heuristic solution: objective 0.0000000
+
+Explored 0 nodes (0 simplex iterations) in 0.59 seconds
+Thread count was 8 (of 8 available processors)
+
+Solution count 1: 0 
+Pool objective bound 0
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+
+Gurobi 7.0.2 (win64) logging started 04/12/18 09:42:56
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+Changed value of parameter TimeLimit to 90.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 13658 rows, 22725 columns and 68635 nonzeros
+Variable types: 0 continuous, 22725 integer (8475 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+02]
+  Objective range  [0e+00, 0e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 4e+01]
+Presolve removed 9786 rows and 20690 columns
+Presolve time: 0.57s
+Presolved: 3872 rows, 2035 columns, 17975 nonzeros
+Variable types: 0 continuous, 2035 integer (2034 binary)
+Found heuristic solution: objective 0.0000000
+
+Explored 0 nodes (0 simplex iterations) in 0.59 seconds
+Thread count was 8 (of 8 available processors)
+
+Solution count 1: 0 
+Pool objective bound 0
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+
+Gurobi 7.0.2 (win64) logging started 04/12/18 10:01:09
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+Changed value of parameter TimeLimit to 90.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 253 rows, 22725 columns and 1867 nonzeros
+Variable types: 0 continuous, 22725 integer (8475 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+02]
+  Objective range  [0e+00, 0e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 3e+00]
+Found heuristic solution: objective 0
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds
+Thread count was 1 (of 8 available processors)
+
+Solution count 1: 0 
+Pool objective bound 0
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+
+Gurobi 7.0.2 (win64) logging started 04/12/18 10:04:41
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+Changed value of parameter TimeLimit to 90.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 253 rows, 22725 columns and 1867 nonzeros
+Variable types: 0 continuous, 22725 integer (8475 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+02]
+  Objective range  [0e+00, 0e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 3e+00]
+Found heuristic solution: objective 0
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds
+Thread count was 1 (of 8 available processors)
+
+Solution count 1: 0 
+Pool objective bound 0
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+
+Gurobi 7.0.2 (win64) logging started 04/12/18 10:17:55
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+Changed value of parameter TimeLimit to 90.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 253 rows, 22725 columns and 1867 nonzeros
+Variable types: 0 continuous, 22725 integer (8475 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+02]
+  Objective range  [0e+00, 0e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 3e+00]
+Found heuristic solution: objective 0
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds
+Thread count was 1 (of 8 available processors)
+
+Solution count 1: 0 
+Pool objective bound 0
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+
+Gurobi 7.0.2 (win64) logging started 04/12/18 10:19:32
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+Changed value of parameter TimeLimit to 90.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 253 rows, 22725 columns and 1867 nonzeros
+Variable types: 0 continuous, 22725 integer (8475 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+02]
+  Objective range  [0e+00, 0e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 3e+00]
+Found heuristic solution: objective 0
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds
+Thread count was 1 (of 8 available processors)
+
+Solution count 1: 0 
+Pool objective bound 0
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+
+Gurobi 7.0.2 (win64) logging started 04/12/18 10:23:07
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+Changed value of parameter TimeLimit to 90.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 253 rows, 22725 columns and 1867 nonzeros
+Variable types: 0 continuous, 22725 integer (8475 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+02]
+  Objective range  [0e+00, 0e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 3e+00]
+Found heuristic solution: objective 0
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds
+Thread count was 1 (of 8 available processors)
+
+Solution count 1: 0 
+Pool objective bound 0
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+
+Gurobi 7.0.2 (win64) logging started 04/12/18 10:23:41
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+Changed value of parameter TimeLimit to 90.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 253 rows, 22725 columns and 1867 nonzeros
+Variable types: 0 continuous, 22725 integer (8475 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+02]
+  Objective range  [3e+01, 1e+06]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 3e+00]
+Found heuristic solution: objective 866.667
+Presolve removed 253 rows and 22725 columns
+Presolve time: 0.26s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.28 seconds
+Thread count was 1 (of 8 available processors)
+
+Solution count 1: 866.667 
+Pool objective bound 866.667
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 8.666666666667e+02, best bound 8.666666666667e+02, gap 0.0000%
+
+Gurobi 7.0.2 (win64) logging started 04/12/18 10:24:25
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+Changed value of parameter TimeLimit to 90.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 253 rows, 22725 columns and 1867 nonzeros
+Variable types: 0 continuous, 22725 integer (8475 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+02]
+  Objective range  [3e+01, 1e+06]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 3e+00]
+Found heuristic solution: objective 866.667
+Presolve removed 253 rows and 22725 columns
+Presolve time: 0.01s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.01 seconds
+Thread count was 1 (of 8 available processors)
+
+Solution count 1: 866.667 
+Pool objective bound 866.667
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 8.666666666667e+02, best bound 8.666666666667e+02, gap 0.0000%
+
+Gurobi 7.0.2 (win64) logging started 04/12/18 10:26:06
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+Changed value of parameter TimeLimit to 90.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 253 rows, 22725 columns and 1867 nonzeros
+Variable types: 0 continuous, 22725 integer (8475 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+02]
+  Objective range  [3e+01, 1e+06]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 3e+00]
+Found heuristic solution: objective 866.667
+Presolve removed 253 rows and 22725 columns
+Presolve time: 0.01s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.01 seconds
+Thread count was 1 (of 8 available processors)
+
+Solution count 1: 866.667 
+Pool objective bound 866.667
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 8.666666666667e+02, best bound 8.666666666667e+02, gap 0.0000%
+
+Gurobi 7.0.2 (win64) logging started 04/12/18 10:27:54
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+Changed value of parameter TimeLimit to 90.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 253 rows, 22725 columns and 1867 nonzeros
+Variable types: 0 continuous, 22725 integer (8475 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+02]
+  Objective range  [1e+00, 1e+06]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 3e+00]
+Found heuristic solution: objective 866.667
+Presolve removed 253 rows and 22725 columns
+Presolve time: 0.01s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.01 seconds
+Thread count was 1 (of 8 available processors)
+
+Solution count 1: 866.667 
+Pool objective bound 866.667
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 8.666666666667e+02, best bound 8.666666666667e+02, gap 0.0000%
+
+Gurobi 7.0.2 (win64) logging started 04/12/18 10:28:18
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+Changed value of parameter TimeLimit to 90.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 253 rows, 22725 columns and 1867 nonzeros
+Variable types: 0 continuous, 22725 integer (8475 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+02]
+  Objective range  [1e+00, 1e+06]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 3e+00]
+Found heuristic solution: objective 866.667
+Presolve removed 253 rows and 22725 columns
+Presolve time: 0.01s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.01 seconds
+Thread count was 1 (of 8 available processors)
+
+Solution count 1: 866.667 
+Pool objective bound 866.667
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 8.666666666667e+02, best bound 8.666666666667e+02, gap 0.0000%
+
+Gurobi 7.0.2 (win64) logging started 04/12/18 10:31:35
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+Changed value of parameter TimeLimit to 90.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 246 rows, 21325 columns and 1797 nonzeros
+Variable types: 0 continuous, 21325 integer (7950 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+02]
+  Objective range  [1e+00, 1e+06]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 3e+00]
+Found heuristic solution: objective 866.667
+Presolve removed 246 rows and 21325 columns
+Presolve time: 0.01s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.01 seconds
+Thread count was 1 (of 8 available processors)
+
+Solution count 1: 866.667 
+Pool objective bound 866.667
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 8.666666666667e+02, best bound 8.666666666667e+02, gap 0.0000%
+
+Gurobi 7.0.2 (win64) logging started 04/12/18 10:41:50
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+Changed value of parameter TimeLimit to 90.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+
+Gurobi 7.0.2 (win64) logging started 04/12/18 10:45:20
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+Changed value of parameter TimeLimit to 90.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 246 rows, 21325 columns and 1797 nonzeros
+Variable types: 0 continuous, 21325 integer (7950 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+02]
+  Objective range  [1e+00, 1e+06]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 3e+00]
+Found heuristic solution: objective 866.667
+Presolve removed 246 rows and 21325 columns
+Presolve time: 0.07s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.14 seconds
+Thread count was 1 (of 8 available processors)
+
+Solution count 1: 866.667 
+Pool objective bound 866.667
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 8.666666666667e+02, best bound 8.666666666667e+02, gap 0.0000%
+
+Gurobi 7.0.2 (win64) logging started 04/12/18 10:46:12
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+Changed value of parameter TimeLimit to 90.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 246 rows, 21325 columns and 1797 nonzeros
+Variable types: 0 continuous, 21325 integer (7950 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+02]
+  Objective range  [1e+00, 1e+06]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 3e+00]
+Found heuristic solution: objective 866.667
+Presolve removed 246 rows and 21325 columns
+Presolve time: 0.01s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.01 seconds
+Thread count was 1 (of 8 available processors)
+
+Solution count 1: 866.667 
+Pool objective bound 866.667
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 8.666666666667e+02, best bound 8.666666666667e+02, gap 0.0000%
+
+Gurobi 7.0.2 (win64) logging started 04/12/18 10:51:36
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+Changed value of parameter TimeLimit to 90.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 246 rows, 21325 columns and 1797 nonzeros
+Variable types: 0 continuous, 21325 integer (7950 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+02]
+  Objective range  [1e+00, 1e+06]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 3e+00]
+Found heuristic solution: objective 866.667
+Presolve removed 246 rows and 21325 columns
+Presolve time: 1.37s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 1.94 seconds
+Thread count was 1 (of 8 available processors)
+
+Solution count 1: 866.667 
+Pool objective bound 866.667
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 8.666666666667e+02, best bound 8.666666666667e+02, gap 0.0000%
+
+Gurobi 7.0.2 (win64) logging started 04/12/18 10:54:16
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+Changed value of parameter TimeLimit to 90.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 246 rows, 21325 columns and 1797 nonzeros
+Variable types: 0 continuous, 21325 integer (7950 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+02]
+  Objective range  [1e+00, 1e+06]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 3e+00]
+Found heuristic solution: objective 866.667
+Presolve removed 246 rows and 21325 columns
+Presolve time: 0.01s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.01 seconds
+Thread count was 1 (of 8 available processors)
+
+Solution count 1: 866.667 
+Pool objective bound 866.667
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 8.666666666667e+02, best bound 8.666666666667e+02, gap 0.0000%
+
+Gurobi 7.0.2 (win64) logging started 04/12/18 10:55:02
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+Changed value of parameter TimeLimit to 90.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 246 rows, 21325 columns and 1797 nonzeros
+Variable types: 0 continuous, 21325 integer (7950 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+02]
+  Objective range  [1e+00, 1e+06]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 3e+00]
+Found heuristic solution: objective 866.667
+Presolve removed 246 rows and 21325 columns
+Presolve time: 0.01s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.01 seconds
+Thread count was 1 (of 8 available processors)
+
+Solution count 1: 866.667 
+Pool objective bound 866.667
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 8.666666666667e+02, best bound 8.666666666667e+02, gap 0.0000%
+
+Gurobi 7.0.2 (win64) logging started 04/12/18 10:56:27
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+Changed value of parameter TimeLimit to 90.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 246 rows, 21325 columns and 1797 nonzeros
+Variable types: 0 continuous, 21325 integer (7950 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+02]
+  Objective range  [1e+00, 1e+06]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 3e+00]
+Found heuristic solution: objective 866.667
+Presolve removed 246 rows and 21325 columns
+Presolve time: 0.01s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.02 seconds
+Thread count was 1 (of 8 available processors)
+
+Solution count 1: 866.667 
+Pool objective bound 866.667
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 8.666666666667e+02, best bound 8.666666666667e+02, gap 0.0000%
+
+Gurobi 7.0.2 (win64) logging started 04/12/18 11:44:36
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+Changed value of parameter TimeLimit to 90.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+
+Gurobi 7.0.2 (win64) logging started 04/12/18 11:45:19
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+Changed value of parameter TimeLimit to 90.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Changed value of parameter Presolve to 0
+   Prev: -1  Min: -1  Max: 2  Default: -1
+Optimize a model with 246 rows, 21325 columns and 1797 nonzeros
+Variable types: 0 continuous, 21325 integer (7950 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+02]
+  Objective range  [1e+00, 1e+06]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 3e+00]
+Found heuristic solution: objective 866.667
+Variable types: 0 continuous, 21325 integer (7950 binary)
+
+Root relaxation: objective 8.488889e+02, 1 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  848.88889    0    1  866.66667  848.88889  2.05%     -    0s
+
+Explored 0 nodes (1 simplex iterations) in 0.16 seconds
+Thread count was 8 (of 8 available processors)
+
+Solution count 1: 866.667 
+Pool objective bound 866.667
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 8.666666666667e+02, best bound 8.666666666667e+02, gap 0.0000%
+
+Gurobi 7.0.2 (win64) logging started 04/12/18 11:46:23
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+Changed value of parameter TimeLimit to 90.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Changed value of parameter Presolve to 0
+   Prev: -1  Min: -1  Max: 2  Default: -1
+Optimize a model with 246 rows, 21325 columns and 1797 nonzeros
+Variable types: 0 continuous, 21325 integer (7950 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+02]
+  Objective range  [1e+00, 1e+06]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 3e+00]
+Found heuristic solution: objective 866.667
+Variable types: 0 continuous, 21325 integer (7950 binary)
+
+Root relaxation: objective 8.488889e+02, 1 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  848.88889    0    1  866.66667  848.88889  2.05%     -    0s
+
+Explored 0 nodes (1 simplex iterations) in 0.04 seconds
+Thread count was 8 (of 8 available processors)
+
+Solution count 1: 866.667 
+Pool objective bound 866.667
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 8.666666666667e+02, best bound 8.666666666667e+02, gap 0.0000%
+
+Gurobi 7.0.2 (win64) logging started 04/12/18 11:48:19
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+Changed value of parameter TimeLimit to 90.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+
+Gurobi 7.0.2 (win64) logging started 04/12/18 11:50:04
+
+Changed value of parameter logfile to ferry-log.txt
+   Prev: gurobi.log  Default: 
+Changed value of parameter TimeLimit to 90.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 20748 rows, 21325 columns and 97221 nonzeros
+Variable types: 0 continuous, 21325 integer (7950 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+02]
+  Objective range  [1e+00, 1e+06]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 9e+01]
+Presolve removed 5754 rows and 4148 columns
+Presolve time: 1.51s
+Presolved: 14994 rows, 17177 columns, 79133 nonzeros
+Variable types: 0 continuous, 17177 integer (6986 binary)
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+    8932    1.0719468e+05   2.021509e+03   0.000000e+00      5s
+   13264    1.1675848e+05   5.484422e+03   0.000000e+00     10s
+   17596    1.2421750e+05   1.242493e+04   0.000000e+00     15s
+   21852    1.2994057e+05   4.554475e+03   0.000000e+00     20s
+   27172    1.3533584e+05   2.326233e+03   0.000000e+00     25s
+   31506    1.3742643e+05   0.000000e+00   0.000000e+00     29s
+
+Root relaxation: objective 1.374264e+05, 31506 iterations, 26.90 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 137426.434    0 2065          - 137426.434      -     -   28s
+
+Cutting planes:
+  Gomory: 1
+  Cover: 27
+  Implied bound: 15
+  Clique: 3
+  MIR: 70
+  Zero half: 79
+
+Explored 0 nodes (31676 simplex iterations) in 90.01 seconds
+Thread count was 8 (of 8 available processors)
+
+Solution count 0
+Pool objective bound 137427
+
+Time limit reached
+Best objective -, best bound 1.374266666667e+05, gap -

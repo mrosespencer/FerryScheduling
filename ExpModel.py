@@ -122,6 +122,7 @@ for i in range(len(arrd)):
 
 
 q = int((finaltime-starttime)/delta)
+print(q)
 
 fuelcostd = [0,0,0]
 portcostd = [0,0,0]
