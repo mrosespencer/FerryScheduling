@@ -96,7 +96,7 @@ def ferrymodel(p, b, q, berths, porttimed, delta, portcostd, fuelcostd, capacity
                 m.addConstr(inx-outx == demand[i,l,a], name="bal " +str(i)+"_"+ str(l)+"_" + str(a))
 
     # Passenger transfer
-    for a in range(1):  #destination port
+    for a in range(p):  #destination port
         for i in range(9,q-1):
             w = porttimed[a]
             for t in range(i, i+w):
@@ -112,11 +112,17 @@ def ferrymodel(p, b, q, berths, porttimed, delta, portcostd, fuelcostd, capacity
                                 if q != l:
                                     travelarcs.append(q)    #list of travel arcs possible for the transfer and destination ports
                         arctime[q] = largetimed[q, l]
-                        sum = 0
-                        for q in range(p):
-                            if q != a:
-                                if q != l:
-                                    sum += x[(i-arctime[q]), (q*p +l), a]
+                        sum = LinExpr()
+                        for j in range(i, t):
+                            for q in range(p):
+                                if q != a:
+                                    if q != l:
+                                        sum.addTerms(1.0, x[(j-arctime[q]), (q*p +l), a])
+
+                        m.addConstr(sum <= x[t, l*6,a], name= "transfer " +str(i)+"_"+ str(l)+"_" + str(a))
+
+
+                        # print(sum)
 
                     # print(travelarcs)
 
@@ -126,7 +132,7 @@ def ferrymodel(p, b, q, berths, porttimed, delta, portcostd, fuelcostd, capacity
 
 
     m.update()
-    # m.optimize()
+    m.optimize()
 
 
     finalx = {}
