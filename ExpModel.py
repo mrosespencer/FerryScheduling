@@ -98,7 +98,7 @@ starttime = '05:00'
 pt = datetime.datetime.strptime(starttime, '%H:%M')
 starttime = pt.minute + pt.hour * 60
 
-finaltime = "23:50"
+finaltime = "22:40"
 pt = datetime.datetime.strptime(finaltime, '%H:%M')
 finaltime = pt.minute + pt.hour * 60
 
@@ -129,6 +129,8 @@ for b in range(3):
     fuelcostd[b] = (fuelcost[b]*(delta/60))
     portcostd[b] = portcost[b] * (delta / 60)
 
+
+
 porttimed = [0,0,0,0,0]
 for p in range(ports):
     porttimed[p] = math.floor(porttime[p]/delta)
@@ -148,9 +150,10 @@ for i in range(len(arrd)):
     arrtime = demand[i,2]
     desttime = demand[i,3]
 
-    demandm[arrtime, arrival, dest] = -demand[i,4]
+    demandm[arrtime, arrival, dest] = demand[i,4]
+    # demandm[arrtime, dest, dest] = demand[i, 4]
     # demandm[arrtime,dest+5, dest] = -demand[i,4] #still wrong
-    demandm[desttime, dest, dest] = demand[i, 4]
+    demandm[desttime, dest, dest] = -demand[i, 4]
     # demandm[desttime, (arrival*5 +dest)] = demand[i,4]
     # print(demandm[arrtime, arrival*5 +dest])
 

@@ -43,17 +43,41 @@ def ferrymodel(p, b, q, berths, porttimed, delta, portcostd, fuelcostd, capacity
                 if w != 0:
                     objective.addTerms(fuelcostd[k]*arctime, y[i, j, k])
                 else:
-                    objective.addTerms(porttimed[k], y[i, j, k])
+                    objective.addTerms(portcostd[k], y[i, j, k])
+
+    for i in range(q):
+        for j in range(o):
+            for l in range(p):
+                objective.addTerms(1.0, x[i,j,l])
+
+
+
+    m.setObjective(objective, GRB.MINIMIZE)
 
     # Ferry balancing constraints
     for k in range(b):
         for l in range(p):
-            outb = quicksum(y[i,j,k] for i in range(q) for j in range(l*5, (l+1)*5))
-            inb = quicksum(y[i,j,k] for i in range(q) for j in range(l, p*p, 5))
-            m.addConstr(outb-inb == 0, name="bal " + str(l)+"_" + str(k))
+            for i in range(9,q-2):
+                arctime = [0, 0, 0, 0, 0]
+                for q in range(p):
+                    arctime[q] = largetimed[q, l]
+                arctime[l] = 1
+                inb = LinExpr()
+                for j in range(l, p * p, 5):
+                    port = j % 5
+                    if arctime[port] < 20:
+                        inb.add(y[i - arctime[port], j, k])
 
-    m.addConstr(y[(q-1), 0,0] == 1)
-    m.addConstr(y[(q-1), 10,1] == 1)
+                outb = quicksum(y[i,j,k] for j in range(l*5, (l+1)*5))
+                # inb = quicksum(y[i,j,k] for i in range(q) for j in range(l, p*p, 5))
+                m.addConstr(inb-outb == 0, name="bal " + str(l)+"_" + str(k))
+
+    m.addConstr(y[(0), 0, 0] == 1)
+    m.addConstr(y[(0), 10, 1] == 1)
+    m.addConstr(y[(0), 24, 2] == 1)
+
+    m.addConstr(y[(q - 1), 0, 0] == 1)
+    m.addConstr(y[(q - 1), 10, 1] == 1)
     m.addConstr(y[(q - 1), 24, 2] == 1)
 
     # Berth constraints
@@ -89,11 +113,21 @@ def ferrymodel(p, b, q, berths, porttimed, delta, portcostd, fuelcostd, capacity
     # Passenger balancing -- needs modification
     for a in range(p):
         for l in range(p):
-            for i in range(q):
+            for i in range(9,q):
+                arctime = [0, 0, 0, 0, 0]
+                # travelarcs = []
+                for q in range(p):
+                    arctime[q] = largetimed[q, l]
+                arctime[a] = 1
+                inx = LinExpr()
+                for j in range(l, p * p, 5):
+                    port = j%5
+                    if arctime[port] < 20:
+                        inx.add(x[i-arctime[port],j,a])
                 outx = quicksum(x[i,j,a]  for j in range(l*5, (l+1)*5))
-                inx = quicksum(x[i,j,a]  for j in range(l, p*p, 5))
+                # inx = quicksum(x[i,j,a]  for j in range(l, p*p, 5))
                 # print("%d, %d, %d" % (i, l, a))
-                m.addConstr(inx-outx == demand[i,l,a], name="bal " +str(i)+"_"+ str(l)+"_" + str(a))
+                m.addConstr(inx-outx == -demand[i,l,a], name="bal " +str(i)+"_"+ str(l)+"_" + str(a))
 
     # Passenger transfer
     for a in range(p):  #destination port
@@ -138,16 +172,12 @@ def ferrymodel(p, b, q, berths, porttimed, delta, portcostd, fuelcostd, capacity
     finalx = {}
     varlist = []
 
-    # for v in m.getVars():
-    #     if v.VType  > 0:
-    #         varlist.append(v.x)
-
 
     # for i in range(n):
     #     for j in range(n):
     #         finalx[i,j] = varlist[(n*i)+j]
 
-    # gap = m.MIPGAP
+    gap = m.MIPGAP
     #
     # m.computeIIS()
     # m.write("model.ilp")
@@ -156,12 +186,12 @@ def ferrymodel(p, b, q, berths, porttimed, delta, portcostd, fuelcostd, capacity
     #     if c.IISConstr:
     #         print('%s' % c.constrName)
 
-    # for v in m.getVars():
-    #     if v.x > 0:
-    #         print(v.varName, v.x)
+    for v in m.getVars():
+        if v.x > 0:
+            print(v.varName, v.x)
 
-    # print('Obj:', m.objVal)
-    # print('Gap: ', gap)
+    print('Obj:', m.objVal)
+    print('Gap: ', gap)
 
 
     t1 = time.time()
