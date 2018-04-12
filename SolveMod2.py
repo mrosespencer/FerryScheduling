@@ -3,7 +3,7 @@ import time
 import math
 
 
-def ferrymodel(p, b, q, berths, porttimed, delta, portcostd, fuelcostd, capacity, demand, times):
+def ferrymodel(p, b, q, berths, porttimed, delta, portcostd, fuelcostd, capacity, demand, times, largetimed):
     t0 = time.time()
 
     # Create model
@@ -96,17 +96,37 @@ def ferrymodel(p, b, q, berths, porttimed, delta, portcostd, fuelcostd, capacity
                 m.addConstr(inx-outx == demand[i,l,a], name="bal " +str(i)+"_"+ str(l)+"_" + str(a))
 
     # Passenger transfer
-    for a in range(p):
+    for a in range(1):  #destination port
         for i in range(9,q-1):
             w = porttimed[a]
             for t in range(i, i+w):
-                
-                lhs = quicksum(x[i,,a] for j =)
+
+                # l = 2
+                for l in range(p):  #transfer port
+                    if l!= a:
+                        arctime = [0,0,0,0,0]
+
+                        travelarcs = []
+                        for q in range(p):
+                            if q != a:
+                                if q != l:
+                                    travelarcs.append(q)    #list of travel arcs possible for the transfer and destination ports
+                        arctime[q] = largetimed[q, l]
+                        sum = 0
+                        for q in range(p):
+                            if q != a:
+                                if q != l:
+                                    sum += x[(i-arctime[q]), (q*p +l), a]
+
+                    # print(travelarcs)
+
+
+                # lhs = quicksum(x[i,,a] for j =)
 
 
 
     m.update()
-    m.optimize()
+    # m.optimize()
 
 
     finalx = {}
@@ -121,21 +141,21 @@ def ferrymodel(p, b, q, berths, porttimed, delta, portcostd, fuelcostd, capacity
     #     for j in range(n):
     #         finalx[i,j] = varlist[(n*i)+j]
 
-    gap = m.MIPGAP
-
-    m.computeIIS()
-    m.write("model.ilp")
-    print('\nThe following constraint(s) cannot be satisfied:')
-    for c in m.getConstrs():
-        if c.IISConstr:
-            print('%s' % c.constrName)
+    # gap = m.MIPGAP
+    #
+    # m.computeIIS()
+    # m.write("model.ilp")
+    # print('\nThe following constraint(s) cannot be satisfied:')
+    # for c in m.getConstrs():
+    #     if c.IISConstr:
+    #         print('%s' % c.constrName)
 
     # for v in m.getVars():
     #     if v.x > 0:
     #         print(v.varName, v.x)
 
-    print('Obj:', m.objVal)
-    print('Gap: ', gap)
+    # print('Obj:', m.objVal)
+    # print('Gap: ', gap)
 
 
     t1 = time.time()
