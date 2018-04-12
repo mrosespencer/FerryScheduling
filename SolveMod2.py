@@ -5,7 +5,7 @@ import math
 
 def ferrymodel(p, b, q, berths, porttimed, delta, portcostd, fuelcostd, capacity, demand, times, largetimed):
     t0 = time.time()
-    print(q)
+    # print(q)
 
     # Create model
     m = Model()
@@ -47,10 +47,19 @@ def ferrymodel(p, b, q, berths, porttimed, delta, portcostd, fuelcostd, capacity
                 else:
                     objective.addTerms(portcostd[k], y[i, j, k])
 
+    bigm = 1000
     for i in range(q):
         for j in range(o):
             for l in range(p):
-                objective.addTerms(1.0, x[i, j, l])
+                port = j%5
+                if l != port:
+                    objective.addTerms(1.0, x[i, j, l])
+
+    for j in range(o):
+        for l in range(p):
+            port = j%5
+            if l != port:
+                objective.addTerms(bigm, x[q,j,l])
 
 
 
@@ -78,7 +87,7 @@ def ferrymodel(p, b, q, berths, porttimed, delta, portcostd, fuelcostd, capacity
     m.addConstr(y[(0), 10, 1] == 1)
     m.addConstr(y[(0), 24, 2] == 1)
 
-    print("q-1 is: " + str(q-1))
+    # print("q-1 is: " + str(q-1))
     m.addConstr(y[(q - 1), 0, 0] == 1)
     m.addConstr(y[(q - 1), 10, 1]  == 1)
     m.addConstr(y[(q - 1), 24, 2]  == 1)

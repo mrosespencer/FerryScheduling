@@ -68,7 +68,7 @@ ft.close()
 times = {}
 for i in range(boats):
     for j in range(ports*ports):
-        times[i,j] = math.floor(arrtravel[i][j]/delta)
+        times[i,j] = math.ceil(arrtravel[i][j]/delta)
 
 # printmatrix(times,boats,ports*ports)
 
@@ -122,7 +122,7 @@ for i in range(len(arrd)):
 
 
 q = int((finaltime-starttime)/delta)
-print(q)
+# print(q)
 
 fuelcostd = [0,0,0]
 portcostd = [0,0,0]
