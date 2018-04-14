@@ -167,14 +167,14 @@ for i in range(q+1):
         for h in range(n):
             demand3[i,j,h] = 0
 
-# for i in range(n):
-#     arrival = demand[i,0] - 1
-#     dest = demand[i,1] - 1
-#     arrtime = demand[i,2]
-#     desttime = demand[i,3]
-#
-#     demand3[arrtime, arrival, i] = demand[i,4]
-#     demand3[q+1, dest, i] = -demand[i, 4]
+for i in range(n):
+    arrival = demand[i,0] - 1
+    dest = demand[i,1] - 1
+    arrtime = demand[i,2]
+    desttime = demand[i,3]
+
+    demand3[arrtime, arrival, i] = demand[i,4]
+    demand3[q+1, dest, i] = -demand[i, 4]
 
 # for i in range(q):
 #     for j in range(ports):
@@ -183,6 +183,20 @@ for i in range(q+1):
 
 # print(porttimed)
 
+boatbalance = {}
+for i in range(q):
+    for j in range(ports):
+        for k in range(boats):
+            boatbalance[i,j,k] =0
+
+boatbalance[(0), 0, 0] = -1
+boatbalance[(0), 2, 1] = -1
+boatbalance[(0), 4, 2] = -1
+
+boatbalance[(q - 1), 0, 0] = 1
+boatbalance[(q - 1), 2, 1] = 1
+boatbalance[(q - 1), 4, 2] = 1
+
 # SolveMod.ferrymodel(ports, boats, q, berths, porttimed,delta, portcostd, fuelcostd, capacity, demand, largetimed)
 # SolveMod2.ferrymodel(ports, boats, q, berths, porttimed,delta, portcostd, fuelcostd, capacity, demandm, times, largetimed)
-SolveMod3.ferrymodel(ports, boats, q, berths, porttimed,delta, portcostd, fuelcostd, capacity, demand3, times, largetimed,n)
+SolveMod3.ferrymodel(ports, boats, q, berths, porttimed,delta, portcostd, fuelcostd, capacity, demand3, times, largetimed,n, boatbalance)

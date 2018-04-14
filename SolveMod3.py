@@ -3,7 +3,7 @@ import time
 import math
 
 
-def ferrymodel(p, b, q, berths, porttimed, delta, portcostd, fuelcostd, capacity, demand, times, largetimed, n):
+def ferrymodel(p, b, q, berths, porttimed, delta, portcostd, fuelcostd, capacity, demand, times, largetimed, n, boatbalance):
     t0 = time.time()
     # print(q)
 
@@ -96,16 +96,16 @@ def ferrymodel(p, b, q, berths, porttimed, delta, portcostd, fuelcostd, capacity
                 # print(inb)
                 outb = quicksum(y[i, j, k] for j in range(l * 5, (l + 1) * 5))
                 # inb = quicksum(y[i,j,k] for i in range(q) for j in range(l, p*p, 5))
-                m.addConstr(inb - outb == 0, name="bal " + str(l) + "_" + str(k))
+                m.addConstr((inb - outb) == boatbalance[i,l,k], name="bal " +str(i)+ "_"+ str(l) + "_" + str(k))
 
-    m.addConstr(y[(0), 0, 0] == 1, name="home00")
-    m.addConstr(y[(0), 10, 1] == 1, name="home10")
-    m.addConstr(y[(0), 24, 2] == 1, name="home20")
-
-
-    m.addConstr(y[(q -1), 0, 0] == 1, name="home0q")
-    m.addConstr(y[(q -1), 10, 1]  == 1, name="home1q")
-    m.addConstr(y[(q -1), 24, 2]  == 1, name="home2q")
+    # m.addConstr(y[(0), 0, 0] == 1, name="home00")
+    # m.addConstr(y[(0), 10, 1] == 1, name="home10")
+    # m.addConstr(y[(0), 24, 2] == 1, name="home20")
+    #
+    #
+    # m.addConstr(y[(q -1), 0, 0] == 1, name="home0q")
+    # m.addConstr(y[(q -1), 10, 1]  == 1, name="home1q")
+    # m.addConstr(y[(q -1), 24, 2]  == 1, name="home2q")
 
     for i in range(q):
         for k in range(b):
@@ -120,27 +120,27 @@ def ferrymodel(p, b, q, berths, porttimed, delta, portcostd, fuelcostd, capacity
     # Traversing arc times
     for k in range(b):
         for i in range(q):
-            for j in range(o):
+            for l in range(p):
 
                 arctime = times[k, j]
-                if arctime ==0:
-                    arctime =1
-                if (q - i) >= arctime:
-                    if arctime != 0:
-                        m.addConstr(quicksum(y[a, l, k] for a in range(i, i + arctime) for l in range(o)) <= 1,
-                                    name="travel " + str(i) + "_" + str(k))  # this is possibly wrong
+                # if arctime ==0:
+                #     arctime =1
+                # if (q - i) >= arctime:
+                #     if arctime != 0:
+                        # m.addConstr(quicksum(y[a, l, k] for a in range(i, i + arctime) for l in range(o)) <= 1,
+                        #             name="travel " + str(i) + "_" + str(k))  # this is possibly wrong
 
     # Waiting arc times
-    # for i in range(q - 3):
-    #     for j in range(o):
-    #         for k in range(b):
-    #             port = j % 5
-    #             arctime = times[k, j]
-    #             w = porttimed[port]
-    #             if (q - i) > arctime + w:
-    #                 m.addConstr(
-    #                     w * (quicksum(y[l, j, k] for l in range(i + 1 + arctime, i + w + arctime))) >= y[i, j, k],
-    #                     name="wait " + str(i) + "_" + str(j) + "_" + str(k))  # not convinced this is right either
+    for i in range(q - 3):
+        for j in range(o):
+            for k in range(b):
+                port = j % 5
+                arctime = times[k, j]
+                w = porttimed[port]
+                if (q - i) > arctime + w:
+                    m.addConstr(
+                        w * (quicksum(y[l, j, k] for l in range(i + 1 + arctime, i + w + arctime))) >= y[i, j, k],
+                        name="wait " + str(i) + "_" + str(j) + "_" + str(k))  # not convinced this is right either
 
     for i in range(q - 1):
         for j in range(o):
@@ -222,12 +222,12 @@ def ferrymodel(p, b, q, berths, porttimed, delta, portcostd, fuelcostd, capacity
     gap = m.MIPGAP
 
 
-    m.computeIIS()
-    m.write("model.ilp")
-    print('\nThe following constraint(s) cannot be satisfied:')
-    for c in m.getConstrs():
-        if c.IISConstr:
-            print('%s' % c.constrName)
+    # m.computeIIS()
+    # m.write("model.ilp")
+    # print('\nThe following constraint(s) cannot be satisfied:')
+    # for c in m.getConstrs():
+    #     if c.IISConstr:
+    #         print('%s' % c.constrName)
 
     for v in m.getVars():
         if v.x > 0:
