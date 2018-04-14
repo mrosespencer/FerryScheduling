@@ -2,6 +2,7 @@ import csv
 import datetime
 import SolveMod
 import SolveMod2
+import SolveMod3
 import math
 
 ports = 5
@@ -122,7 +123,7 @@ for i in range(len(arrd)):
 
 
 q = int((finaltime-starttime)/delta)
-print(q)
+# print(q)
 
 fuelcostd = [0,0,0]
 portcostd = [0,0,0]
@@ -136,6 +137,8 @@ porttimed = [0,0,0,0,0]
 for p in range(ports):
     porttimed[p] = math.floor(porttime[p]/delta)
 
+
+n= len(arrd)
 demandm ={}
 # arrivingpass ={}
 for i in range(q):
@@ -145,7 +148,7 @@ for i in range(q):
         for h in range(ports):
             demandm[i,j,h] =0
 
-for i in range(len(arrd)):
+for i in range(n):
     arrival = demand[i,0] - 1
     dest = demand[i,1] - 1
     arrtime = demand[i,2]
@@ -158,6 +161,21 @@ for i in range(len(arrd)):
     # demandm[desttime, (arrival*5 +dest)] = demand[i,4]
     # print(demandm[arrtime, arrival*5 +dest])
 
+demand3 = {}
+for i in range(q+1):
+    for j in range(ports):
+        for h in range(n):
+            demand3[i,j,h] = 0
+
+# for i in range(n):
+#     arrival = demand[i,0] - 1
+#     dest = demand[i,1] - 1
+#     arrtime = demand[i,2]
+#     desttime = demand[i,3]
+#
+#     demand3[arrtime, arrival, i] = demand[i,4]
+#     demand3[q+1, dest, i] = -demand[i, 4]
+
 # for i in range(q):
 #     for j in range(ports):
 #         for h in range(ports):
@@ -166,4 +184,5 @@ for i in range(len(arrd)):
 # print(porttimed)
 
 # SolveMod.ferrymodel(ports, boats, q, berths, porttimed,delta, portcostd, fuelcostd, capacity, demand, largetimed)
-SolveMod2.ferrymodel(ports, boats, q, berths, porttimed,delta, portcostd, fuelcostd, capacity, demandm, times, largetimed)
+# SolveMod2.ferrymodel(ports, boats, q, berths, porttimed,delta, portcostd, fuelcostd, capacity, demandm, times, largetimed)
+SolveMod3.ferrymodel(ports, boats, q, berths, porttimed,delta, portcostd, fuelcostd, capacity, demand3, times, largetimed,n)

@@ -3,7 +3,7 @@ import time
 import math
 
 
-def ferrymodel(p, b, q, berths, porttimed, delta, portcostd, fuelcostd, capacity, demand, times, largetimed):
+def ferrymodel(p, b, q, berths, porttimed, delta, portcostd, fuelcostd, capacity, demand, times, largetimed, n):
     t0 = time.time()
     # print(q)
 
@@ -16,7 +16,7 @@ def ferrymodel(p, b, q, berths, porttimed, delta, portcostd, fuelcostd, capacity
     m.setParam(GRB.Param.TimeLimit, 90.0)
     # m.setParam(GRB.Param.Presolve, 0)
 
-    n = p * q
+    # n = p * q
     o = p*p
     # print(q)
 
@@ -32,7 +32,7 @@ def ferrymodel(p, b, q, berths, porttimed, delta, portcostd, fuelcostd, capacity
 
     for i in range(q + 1):
         for j in range(o):
-            for k in range(p):
+            for k in range(n):
                 x[i, j, k] = m.addVar(vtype=GRB.INTEGER, name='x ' + str(i) + '_' + str(j) + '_' + str(k))  # passengers
 
     objective = LinExpr()
@@ -51,13 +51,13 @@ def ferrymodel(p, b, q, berths, porttimed, delta, portcostd, fuelcostd, capacity
 
     for i in range(q):
         for j in range(o):
-            for l in range(p):
-                port = j%5
-                if l != port:
+            for l in range(n):
+                w = j%6
+                if w != 0:
                     objective.addTerms(1.0, x[i, j, l])
 
     for j in range(o):
-        for l in range(p):
+        for l in range(n):
             port = j%5
             if l != port:
                 objective.addTerms(bigm, x[q,j,l])
@@ -73,10 +73,10 @@ def ferrymodel(p, b, q, berths, porttimed, delta, portcostd, fuelcostd, capacity
 
     for k in range(b):
         for l in range(p):
-            for i in range(1,8):
-                for h in range(l, o, 5):
-                    m.addConstr(y[i,h,k] -y[i+1,h,k] == 0, name="chillin " +str(i)+"_"+str(k))
-            for i in range(8, q - 1):
+            # for i in range(1,8):
+            #     for h in range(l, o, 5):
+                    # m.addConstr(y[i,h,k] -quicksum(y[i+1,a,k] for a in range(l * 5, (l + 1) * 5)) == 0, name="chillin " +str(i)+"_"+str(k))
+            for i in range(q ):
 
                 # arctime = [0, 0, 0, 0, 0]
                 # for h in range(p):
@@ -86,10 +86,11 @@ def ferrymodel(p, b, q, berths, porttimed, delta, portcostd, fuelcostd, capacity
                 inb = LinExpr()
                 for j in range(l, o, 5):
                     # port = j % 5
-                    arctime = times[k,j]
+                    arctime = times[k, j]
                     if arctime == 0:
-                        arctime =1
-                    if arctime < 20:
+                        arctime = 1
+                    if i-arctime >= 0:
+                        # if arctime < q-i:
                         # print(arctime)
                         inb.add(y[i - arctime, j, k]) #fix for ferry times
                 # print(inb)
@@ -101,7 +102,7 @@ def ferrymodel(p, b, q, berths, porttimed, delta, portcostd, fuelcostd, capacity
     m.addConstr(y[(0), 10, 1] == 1, name="home10")
     m.addConstr(y[(0), 24, 2] == 1, name="home20")
 
-    # print("q-1 is: " + str(q-1))
+
     m.addConstr(y[(q -1), 0, 0] == 1, name="home0q")
     m.addConstr(y[(q -1), 10, 1]  == 1, name="home1q")
     m.addConstr(y[(q -1), 24, 2]  == 1, name="home2q")
@@ -122,34 +123,36 @@ def ferrymodel(p, b, q, berths, porttimed, delta, portcostd, fuelcostd, capacity
             for j in range(o):
 
                 arctime = times[k, j]
+                if arctime ==0:
+                    arctime =1
                 if (q - i) >= arctime:
-                    # if arctime != 0:
-                    m.addConstr(quicksum(y[a, l, k] for a in range(i, i + arctime) for l in range(o)) <= 1,
+                    if arctime != 0:
+                        m.addConstr(quicksum(y[a, l, k] for a in range(i, i + arctime) for l in range(o)) <= 1,
                                     name="travel " + str(i) + "_" + str(k))  # this is possibly wrong
 
     # Waiting arc times
-    for i in range(q - 3):
-        for j in range(o):
-            for k in range(b):
-                port = j % 5
-                arctime = times[k, j]
-                w = porttimed[port]
-                if (q - i) > arctime + w:
-                    m.addConstr(
-                        w * (quicksum(y[l, j, k] for l in range(i + 1 + arctime, i + w + arctime))) >= y[i, j, k],
-                        name="wait " + str(i) + "_" + str(j) + "_" + str(k))  # not convinced this is right either
+    # for i in range(q - 3):
+    #     for j in range(o):
+    #         for k in range(b):
+    #             port = j % 5
+    #             arctime = times[k, j]
+    #             w = porttimed[port]
+    #             if (q - i) > arctime + w:
+    #                 m.addConstr(
+    #                     w * (quicksum(y[l, j, k] for l in range(i + 1 + arctime, i + w + arctime))) >= y[i, j, k],
+    #                     name="wait " + str(i) + "_" + str(j) + "_" + str(k))  # not convinced this is right either
 
     for i in range(q - 1):
         for j in range(o):
             if j % 6 != 0:
                 m.addConstr(
-                    quicksum(x[i, j, a] for a in range(p)) <= quicksum(capacity[k] * y[i, j, k] for k in range(b)),
+                    quicksum(x[i, j, a] for a in range(n)) <= quicksum(capacity[k] * y[i, j, k] for k in range(b)),
                     name="cap " + str(i) + "_" + str(j))  # capacity constraints
 
     # Passenger balancing -- needs modification
-    for a in range(p):  # destination
+    for a in range(n):  # destination
         for l in range(p):  # all ports
-            for i in range(8, q):
+            for i in range(8, q+1):
                 arctime = [0, 0, 0, 0, 0]
                 # travelarcs = []
                 for h in range(p):
@@ -157,7 +160,7 @@ def ferrymodel(p, b, q, berths, porttimed, delta, portcostd, fuelcostd, capacity
                 arctime[l] = 1
                 inx = LinExpr()
                 for j in range(l, p * p, 5):
-                    port = math.floor(j / 5)
+                    port = int(math.floor(j / 5))
                     if arctime[port] < 20:
                         inx.add(x[i - arctime[port], j, a])
                 outx = quicksum(x[i, j, a] for j in range(l * 5, (l + 1) * 5))
@@ -166,32 +169,33 @@ def ferrymodel(p, b, q, berths, porttimed, delta, portcostd, fuelcostd, capacity
                 m.addConstr(inx - outx == -demand[i, l, a], name="bal " + str(i) + "_" + str(l) + "_" + str(a))
 
     # Passenger transfer
-    for a in range(p):  # destination port
+    for a in range(n):
         for i in range(9, q - 1):
-            w = porttimed[a]
-            for t in range(i, i + w):
+            for k in range(p): # destination port
+                w = porttimed[k]
+                for t in range(i, i + w):
 
                 # l = 2
-                for l in range(p):  # transfer port
-                    if l != a:
-                        arctime = [0, 0, 0, 0, 0]
+                    for l in range(p):  # transfer port
+                        if l != a:
+                            arctime = [0, 0, 0, 0, 0]
 
-                        travelarcs = []
-                        for h in range(p):
-                            if h != a:
-                                if h != l:
-                                    travelarcs.append(
-                                        h)  # list of travel arcs possible for the transfer and destination ports
-                        arctime[h] = largetimed[h, l]
-                        sum = LinExpr()
-                        for j in range(i, t):
+                            travelarcs = []
                             for h in range(p):
                                 if h != a:
                                     if h != l:
-                                        if arctime[h] < 20:
-                                            sum.addTerms(1.0, x[(j - arctime[h]), (h * p + l), a])
+                                        travelarcs.append(
+                                            h)  # list of travel arcs possible for the transfer and destination ports
+                            arctime[h] = largetimed[h, l]
+                            sum = LinExpr()
+                            for j in range(i, t):
+                                for h in range(p):
+                                    if h != a:
+                                        if h != l:
+                                            if arctime[h] < 20:
+                                                sum.addTerms(1.0, x[(j - arctime[h]), (h * p + l), a])
 
-                        m.addConstr(sum <= x[t, l * 6, a], name="transfer " + str(i) + "_" + str(l) + "_" + str(a))
+                            m.addConstr(sum <= x[t, l * 6, a], name="transfer " + str(i) + "_" + str(l) + "_" + str(a))
 
 
                         # print(sum)
@@ -216,6 +220,7 @@ def ferrymodel(p, b, q, berths, porttimed, delta, portcostd, fuelcostd, capacity
     #         finalx[i,j] = varlist[(n*i)+j]
 
     gap = m.MIPGAP
+
 
     m.computeIIS()
     m.write("model.ilp")
