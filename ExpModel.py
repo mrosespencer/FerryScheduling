@@ -114,7 +114,7 @@ for i in range(len(arrd)):
 for i in range(len(arrd)):
     for j in range(2, 4):
         pt = datetime.datetime.strptime(demand[i, j], '%H:%M')
-        total_minutes = pt.minute + pt.hour * 60-starttime
+        total_minutes = (pt.minute + pt.hour * 60)-starttime
         demand[i, j] = math.floor(total_minutes/delta)
 
 # printmatrix(demand, len(arrd), 5)
@@ -174,7 +174,7 @@ for i in range(n):
     desttime = demand[i,3]
 
     demand3[arrtime, arrival, i] = demand[i,4]
-    demand3[q+1, dest, i] = -demand[i, 4]
+    demand3[q, dest, i] = -demand[i, 4]
 
 # for i in range(q):
 #     for j in range(ports):

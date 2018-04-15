@@ -47,19 +47,18 @@ def ferrymodel(p, b, q, berths, porttimed, delta, portcostd, fuelcostd, capacity
                 else:
                     objective.addTerms(portcostd[k], y[i, j, k])
 
-    bigm = 1000
+    bigm = 100000
 
-    for i in range(q):
-        for j in range(o):
-            for l in range(n):
-                w = j%6
-                if w != 0:
-                    objective.addTerms(1.0, x[i, j, l])
+    # for i in range(q):
+    #     for j in range(o):
+    #         for l in range(n):
+    #             w = j%6
+    #             if w != 0:
+    #                 objective.addTerms(1.0, x[i, j, l])
 
     for j in range(o):
         for l in range(n):
-            port = j%5
-            if l != port:
+            if j%6 !=0:
                 objective.addTerms(bigm, x[q,j,l])
 
 
@@ -142,7 +141,7 @@ def ferrymodel(p, b, q, berths, porttimed, delta, portcostd, fuelcostd, capacity
                         w * (quicksum(y[l, j, k] for l in range(i + 1 + arctime, i + w + arctime))) >= y[i, j, k],
                         name="wait " + str(i) + "_" + str(j) + "_" + str(k))  # not convinced this is right either
 
-    for i in range(q - 1):
+    for i in range(q ):
         for j in range(o):
             if j % 6 != 0:
                 m.addConstr(
@@ -150,52 +149,77 @@ def ferrymodel(p, b, q, berths, porttimed, delta, portcostd, fuelcostd, capacity
                     name="cap " + str(i) + "_" + str(j))  # capacity constraints
 
     # Passenger balancing -- needs modification
-    for a in range(n):  # destination
+    for a in range(n):  # passenger group
         for l in range(p):  # all ports
-            for i in range(8, q+1):
-                arctime = [0, 0, 0, 0, 0]
-                # travelarcs = []
-                for h in range(p):
-                    arctime[h] = largetimed[h, l]
-                arctime[l] = 1
+            for i in range( q+1):
+                # arctime = [0, 0, 0, 0, 0]
+                # # travelarcs = []
+                # for h in range(p):
+                #     arctime[h] = largetimed[h, l]
+                # arctime[l] = 1
+                # inx = LinExpr()
+                # for j in range(l, p * p, 5):
+                #     port = int(math.floor(j / 5))
+                #
+                #     if i-arctime[port] >= 0:
+                #
+                #         inx.add(x[i - arctime[port], j, a])
+
                 inx = LinExpr()
-                for j in range(l, p * p, 5):
+                for j in range(l, o, 5):
                     port = int(math.floor(j / 5))
-                    if arctime[port] < 20:
-                        inx.add(x[i - arctime[port], j, a])
+                    arctime = largetimed[port, l]
+                    if arctime == 0:
+                        arctime = 1
+                    if i-arctime >= 0:
+                        # if arctime < q-i:
+                        # print(arctime)
+                        inx.add(x[i - arctime, j, a]) #fix for ferry times
                 outx = quicksum(x[i, j, a] for j in range(l * 5, (l + 1) * 5))
                 # inx = quicksum(x[i,j,a]  for j in range(l, p*p, 5))
                 # print("%d, %d, %d" % (i, l, a))
-                m.addConstr(inx - outx == -demand[i, l, a], name="bal " + str(i) + "_" + str(l) + "_" + str(a))
+                m.addConstr((inx - outx) == -demand[i, l, a], name="bal " + str(i) + "_" + str(l) + "_" + str(a))
+
+
 
     # Passenger transfer
     for a in range(n):
-        for i in range(9, q - 1):
+        for i in range(q-1):
             for k in range(p): # destination port
                 w = porttimed[k]
                 for t in range(i, i + w):
 
                 # l = 2
                     for l in range(p):  # transfer port
-                        if l != a:
+                        if l != k:
+
+                            sum = LinExpr()
+                            for j in range(l, o, 5):
+                                port = int(math.floor(j / 5))
+                                arctime = largetimed[port, l]
+                                if arctime == 0:
+                                    arctime = 1
+                                if i - arctime >= 0:
+                                    # if arctime < q-i:
+                                    # print(arctime)
+                                    sum.add(x[i - arctime, j, a])  # fix for ferry times
                             arctime = [0, 0, 0, 0, 0]
 
-                            travelarcs = []
-                            for h in range(p):
-                                if h != a:
-                                    if h != l:
-                                        travelarcs.append(
-                                            h)  # list of travel arcs possible for the transfer and destination ports
-                            arctime[h] = largetimed[h, l]
-                            sum = LinExpr()
+                            # travelarcs = []
+                            # for h in range(p):
+                            #     if h != k:
+                            #         if h != l:
+                            #             travelarcs.append(
+                            #                 h)  # list of travel arcs possible for the transfer and destination ports
+
                             for j in range(i, t):
                                 for h in range(p):
-                                    if h != a:
+                                    if h != k:
                                         if h != l:
-                                            if arctime[h] < 20:
-                                                sum.addTerms(1.0, x[(j - arctime[h]), (h * p + l), a])
+                                            if j-arctime[h] >=0:
+                                                sum.add(x[(j - arctime[h]), (h * p + l), a])
 
-                            m.addConstr(sum <= x[t, l * 6, a], name="transfer " + str(i) + "_" + str(l) + "_" + str(a))
+                            # m.addConstr(sum <= x[t, k * 6, a], name="transfer " + str(i) + "_" + str(l) + "_" + str(a))
 
 
                         # print(sum)
