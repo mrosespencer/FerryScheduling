@@ -66,15 +66,9 @@ def ferrymodel(p, b, q, berths, porttimed, delta, portcostd, fuelcostd, capacity
     m.setObjective(objective, GRB.MINIMIZE)
 
     # Ferry balancing constraints
-
-
-
-
     for k in range(b):
         for l in range(p):
-            # for i in range(1,8):
-            #     for h in range(l, o, 5):
-                    # m.addConstr(y[i,h,k] -quicksum(y[i+1,a,k] for a in range(l * 5, (l + 1) * 5)) == 0, name="chillin " +str(i)+"_"+str(k))
+
             for i in range(q ):
 
                 # arctime = [0, 0, 0, 0, 0]
@@ -89,22 +83,13 @@ def ferrymodel(p, b, q, berths, porttimed, delta, portcostd, fuelcostd, capacity
                     if arctime == 0:
                         arctime = 1
                     if i-arctime >= 0:
-                        # if arctime < q-i:
-                        # print(arctime)
-                        inb.add(y[i - arctime, j, k]) #fix for ferry times
+                        inb.add(y[i - arctime, j, k])
                 # print(inb)
                 outb = quicksum(y[i, j, k] for j in range(l * 5, (l + 1) * 5))
                 # inb = quicksum(y[i,j,k] for i in range(q) for j in range(l, p*p, 5))
-                m.addConstr((inb - outb) == boatbalance[i,l,k], name="bal " +str(i)+ "_"+ str(l) + "_" + str(k))
+                m.addConstr((inb - outb) == boatbalance[i,l,k], name="boatbal " +str(i)+ "_"+ str(l) + "_" + str(k))
 
-    # m.addConstr(y[(0), 0, 0] == 1, name="home00")
-    # m.addConstr(y[(0), 10, 1] == 1, name="home10")
-    # m.addConstr(y[(0), 24, 2] == 1, name="home20")
-    #
-    #
-    # m.addConstr(y[(q -1), 0, 0] == 1, name="home0q")
-    # m.addConstr(y[(q -1), 10, 1]  == 1, name="home1q")
-    # m.addConstr(y[(q -1), 24, 2]  == 1, name="home2q")
+
 
     for i in range(q):
         for k in range(b):
@@ -127,7 +112,7 @@ def ferrymodel(p, b, q, berths, porttimed, delta, portcostd, fuelcostd, capacity
                 if (q - i) >= arctime:
                     if arctime != 0:
                         m.addConstr(quicksum(y[a, l, k] for a in range(i, i + arctime) for l in range(o)) <= 1,
-                                    name="travel " + str(i) + "_" + str(k))  # this is possibly wrong
+                                    name="travel " + str(i) + "_" + str(k))
 
     # Waiting arc times
     for i in range(q - 3):
@@ -139,7 +124,7 @@ def ferrymodel(p, b, q, berths, porttimed, delta, portcostd, fuelcostd, capacity
                 if (q - i) > arctime + w:
                     m.addConstr(
                         w * (quicksum(y[l, j, k] for l in range(i + 1 + arctime, i + w + arctime))) >= y[i, j, k],
-                        name="wait " + str(i) + "_" + str(j) + "_" + str(k))  # not convinced this is right either
+                        name="wait " + str(i) + "_" + str(j) + "_" + str(k))
 
     for i in range(q ):
         for j in range(o):
@@ -178,7 +163,7 @@ def ferrymodel(p, b, q, berths, porttimed, delta, portcostd, fuelcostd, capacity
                 outx = quicksum(x[i, j, a] for j in range(l * 5, (l + 1) * 5))
                 # inx = quicksum(x[i,j,a]  for j in range(l, p*p, 5))
                 # print("%d, %d, %d" % (i, l, a))
-                m.addConstr((inx - outx) == -demand[i, l, a], name="bal " + str(i) + "_" + str(l) + "_" + str(a))
+                m.addConstr((inx - outx) == -demand[i, l, a], name="bal " + str(i) + "_" + str(l) + "_" + str(a)) #causes infeasibility
 
 
 
@@ -222,12 +207,6 @@ def ferrymodel(p, b, q, berths, porttimed, delta, portcostd, fuelcostd, capacity
                         #                         sum.add(quicksum(x[(j - arctime[h]), (h * p + l), a] for a in range(n)))
 
 
-                    # print(sum)
-
-                    # print(travelarcs)
-
-
-                # lhs = quicksum(x[i,,a] for j =)
 
 
 
@@ -246,12 +225,12 @@ def ferrymodel(p, b, q, berths, porttimed, delta, portcostd, fuelcostd, capacity
     gap = m.MIPGAP
 
 
-    # m.computeIIS()
-    # m.write("model.ilp")
-    # print('\nThe following constraint(s) cannot be satisfied:')
-    # for c in m.getConstrs():
-    #     if c.IISConstr:
-    #         print('%s' % c.constrName)
+    m.computeIIS()
+    m.write("model.ilp")
+    print('\nThe following constraint(s) cannot be satisfied:')
+    for c in m.getConstrs():
+        if c.IISConstr:
+            print('%s' % c.constrName)
 
     for v in m.getVars():
         if v.x > 0:
