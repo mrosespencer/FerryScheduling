@@ -122,12 +122,12 @@ def ferrymodel(p, b, q, berths, porttimed, delta, portcostd, fuelcostd, capacity
             for l in range(p):
 
                 arctime = times[k, j]
-                # if arctime ==0:
-                #     arctime =1
-                # if (q - i) >= arctime:
-                #     if arctime != 0:
-                        # m.addConstr(quicksum(y[a, l, k] for a in range(i, i + arctime) for l in range(o)) <= 1,
-                        #             name="travel " + str(i) + "_" + str(k))  # this is possibly wrong
+                if arctime ==0:
+                    arctime =1
+                if (q - i) >= arctime:
+                    if arctime != 0:
+                        m.addConstr(quicksum(y[a, l, k] for a in range(i, i + arctime) for l in range(o)) <= 1,
+                                    name="travel " + str(i) + "_" + str(k))  # this is possibly wrong
 
     # Waiting arc times
     for i in range(q - 3):
@@ -184,45 +184,45 @@ def ferrymodel(p, b, q, berths, porttimed, delta, portcostd, fuelcostd, capacity
 
     # Passenger transfer
     for a in range(n):
-        for i in range(q-1):
-            for k in range(p): # destination port
-                w = porttimed[k]
-                for t in range(i, i + w):
+        for i in range(q - 1):
+            for l in range(p):   # transfer port
+                w = porttimed[l]
+                for k in range(p):  # destination port
+                    for t in range(i, i + w-1):
 
-                # l = 2
-                    for l in range(p):  # transfer port
-                        if l != k:
-
-                            sum = LinExpr()
-                            for j in range(l, o, 5):
+                        sum = LinExpr()
+                        for h in range(i, t):
+                            for j in range(l,o,5):
                                 port = int(math.floor(j / 5))
-                                arctime = largetimed[port, l]
-                                if arctime == 0:
-                                    arctime = 1
-                                if i - arctime >= 0:
-                                    # if arctime < q-i:
-                                    # print(arctime)
-                                    sum.add(x[i - arctime, j, a])  # fix for ferry times
-                            arctime = [0, 0, 0, 0, 0]
+                                if k != port:
 
-                            # travelarcs = []
-                            # for h in range(p):
-                            #     if h != k:
-                            #         if h != l:
-                            #             travelarcs.append(
-                            #                 h)  # list of travel arcs possible for the transfer and destination ports
-
-                            for j in range(i, t):
-                                for h in range(p):
-                                    if h != k:
-                                        if h != l:
-                                            if j-arctime[h] >=0:
-                                                sum.add(x[(j - arctime[h]), (h * p + l), a])
-
-                            # m.addConstr(sum <= x[t, k * 6, a], name="transfer " + str(i) + "_" + str(l) + "_" + str(a))
+                                    arctime = largetimed[port, l]
+                                    if arctime == 0:
+                                        arctime = 1
+                                    if i - arctime >= 0:
+                                        sum.add(x[i - arctime, j, a])
 
 
-                        # print(sum)
+                        m.addConstr(sum <= x[t, l * 6, a] , name="transfer " + str(i) + "_" + str(l) + "_" + str(a))
+
+                        # arctime = [0, 0, 0, 0, 0]
+
+                        # travelarcs = []
+                        # for h in range(p):
+                        #     if h != k:
+                        #         if h != l:
+                        #             travelarcs.append(
+                        #                 h)  # list of travel arcs possible for the transfer and destination ports
+
+                        # for j in range(i, t):
+                        #         for h in range(p):
+                        #             if h != k:
+                        #                 if h != l:
+                        #                     if j-arctime[h] >=0:
+                        #                         sum.add(quicksum(x[(j - arctime[h]), (h * p + l), a] for a in range(n)))
+
+
+                    # print(sum)
 
                     # print(travelarcs)
 
